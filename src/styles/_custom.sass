@@ -60,3 +60,34 @@
     background-color: #dee5e8
   .img-infografica__item__numero
     color: #004B89 !important
+
+.bg-gradient
+  background: rgb(0,78,150)
+  background-color: linear-gradient(180deg, rgba(0,78,150,1) 0%, rgba(12,40,74,1) 100%)
+
+.border-dash-rows
+  border: 3px dashed #b9ddfc
+  position: relative
+  &:before
+    content: url('../assets/curso/temas/tema2/adorno1.svg')
+    position: absolute
+    top: 0
+    left: 0
+    width: 57px
+    height: 57px
+    z-index: 1
+    transform: translate(-50%, -50%)
+  &:after
+    content: url('../assets/curso/temas/tema2/adorno1.svg')
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 57px
+    height: 57px
+    z-index: 1
+    transform: rotate(180deg) translate(-50%, -50%)
+
+.acordion__accion__btn--a
+  background-color: $color-primario
+  i
+    color: $white
