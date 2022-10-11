@@ -19,7 +19,7 @@
             p.mb-0 Bienvenido estimado aprendiz, el presente componente formativo contiene información sobre la evolución de las bases de datos, los diferentes tipos que encontramos, así como también información sobre el diseño de bases de datos. Les invito a ver el video de presentación para identificar el contexto de aprendizaje. 
               br
               br
-              |A continuación, se muestra el video de presentación de las temáticas abordadas, es recomendable observarlo con atención:
+              |#[b A continuación, se muestra el video de presentación de las temáticas abordadas, es recomendable observarlo con atención:]
     figure
       .video
         iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)

@@ -33,7 +33,7 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Introducción a los sistemas de BD',
         desarrolloContenidos: true,
         subMenu: [
           {

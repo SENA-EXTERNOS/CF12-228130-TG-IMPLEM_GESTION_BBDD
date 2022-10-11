@@ -26,7 +26,7 @@
                   h3.mb-1 Anexo
                   p.text-small En la actualidad existen varios modelos de bases de datos, para conocerlos se puede descargar el siguiente documento
                 .col.mb-3.mb-sm-0
-                  a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+                  a.boton.color-acento-botones(:href="obtenerLink('downloads/doc1.pdf')" target="_blank" type="application/pdf")
                     span(style='color: #12263f') Descargar 
                     i.fas.fa-file-download(style='color: #12263f')
     Separador
@@ -89,7 +89,6 @@
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Tipos de relaciones
-    p.mb-5(data-aos='fade-right') A continuación, se presentan los siguientes conceptos:
     h4 En un sistema gestor de base de datos SGBD hay dos tipos de relaciones:
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-2.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema2/6.svg', alt='')
@@ -276,7 +275,9 @@
               br
               |Se implementa para relacionar dos tablas, los atributos referenciados por medio de esta clave, solo pueden contener valores de la clave principal de la tabla con que esté relacionada.
               br
-              |#[b Ejemplo:] se dispone de dos tablas que están relacionadas, una llamada “Alquileres” y otra tabla “Clientes”, se puede observar que la relación es por medio de llave foránea, en este caso la llave foránea se encuentra localizada en la tabla “Alquiler” por medio del campo “cod_cliente”, donde a su vez, debe ser clave primaria en la otra tabla con la que está relacionada.
+              br
+              | #[b Ejemplo:] se dispone de dos tablas que están relacionadas, una llamada “Alquileres” y otra tabla “Clientes”, se puede observar que la relación es por medio de llave foránea, en este caso la llave foránea se encuentra localizada en la tabla “Alquiler” por medio del campo “cod_cliente”, donde a su vez, debe ser clave primaria en la otra tabla con la que está relacionada.
+
           .col-md-8
             .tarjeta.bg-white.p-5
               .titulo-sexto.color-acento-contenido(data-aos='fade-right')
@@ -286,15 +287,15 @@
     Separador
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.3 Etapas del diseño, modelo entidad relación
-    .row.mb-4
-      .col-lg-8(data-aos="fade-right")
-        p Para empezar a entender el modelo entidad–relación, se deben revisar primero los conceptos básicos, qué es un modelo, cuáles modelos existen y demás temas pertinentes.
-    .row.justify-content-center.mb-5
-      .col-lg-7(data-aos="fade-right")
-        .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #fff4da ")
-          p.mb-0 #[b Vistas:] también son llamadas relaciones virtuales, son relaciones que también llevan su nombre correspondiente y derivadas. Cuando se remite al término derivadas, se refiere a que se obtienen a partir de otras relaciones.
-        p.mb-5(data-aos='fade-right') Las vistas no poseen sus propios datos, los datos que contienen pertenecen a datos almacenados en relaciones base.
-      .col-lg-5.col-8(data-aos="fade-left"): img(src='@/assets/curso/temas/tema2/13.png', alt='')
+    p(data-aos="fade-right") Para empezar a entender el modelo entidad–relación, se deben revisar primero los conceptos básicos, qué es un modelo, cuáles modelos existen y demás temas pertinentes.
+    h4(data-aos="fade-right") Modelos de Datos
+    p(data-aos="fade-right") Cuando se habla de modelo de daos se refiere a una colección de heramientas utilizadas para la descripciónde los datos, las formas como se relacionan y la semántica asociada a ellos, además de sus restricciones de consistencia. 
+    //- .row.justify-content-center.mb-5
+    //-   .col-lg-7(data-aos="fade-right")
+    //-     .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #fff4da ")
+    //-       p.mb-0 #[b Vistas:] también son llamadas relaciones virtuales, son relaciones que también llevan su nombre correspondiente y derivadas. Cuando se remite al término derivadas, se refiere a que se obtienen a partir de otras relaciones.
+    //-     p.mb-5(data-aos='fade-right') Las vistas no poseen sus propios datos, los datos que contienen pertenecen a datos almacenados en relaciones base.
+    //-   .col-lg-5.col-8(data-aos="fade-left"): img(src='@/assets/curso/temas/tema2/13.png', alt='')
     .row.justify-content-center.mb-5
       .col-lg-3.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema2/14.png', alt='')
       .col-lg-7(data-aos="fade-left")
@@ -423,7 +424,7 @@
           tr
             td 229
             td Laura Parra
-    p.mb-5(data-aos='fade-right') A continuación, se explica en qué consisten cada una de estas llaves y al final se representa a través de un ejemplo cada una de ellas:
+    p.mb-5(data-aos='fade-right') La construcción del MER se puede expresar en cuatro pasos que son:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         img(src='@/assets/curso/temas/tema2/15.svg', alt='')
@@ -447,28 +448,28 @@
           img(src='@/assets/curso/temas/tema2/17.svg', alt='' style='width: 427px').m-auto
         .bloque-texto-g__texto--border.p-2.d-inline-block
           .bloque-texto-g__texto.p-4
-            p.mb-5 La seguridad de las bases de datos se enfoca en los siguientes ítems:
+            p.mb-5 Por tanto, se debe evaluar:
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | Unicidad de ocurrencias: no deben existir dos filas o registros con la misma información.
+                | #[b Unicidad de ocurrencias:] no deben existir dos filas o registros con la misma información.
               li
                 i.fas.fa-check
-                | Múltiples atributos: las entidades deben tener más de un atributo, se deben evitar entidades de solo una ocurrencia.
+                | #[b Múltiples atributos:] las entidades deben tener más de un atributo, se deben evitar entidades de solo una ocurrencia.
               li
                 i.fas.fa-check
-                | Múltiples ocurrencias: complementando la anterior característica, se deben tener mínimo dos atributos en cada entidad.
+                | #[b Múltiples ocurrencias:] complementando la anterior característica, se deben tener mínimo dos atributos en cada entidad.
               li
                 i.fas.fa-check
-                | Exclusividad de ocurrencias y de atributos: las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
+                | #[b Exclusividad de ocurrencias y de atributos:] las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.4 Normalización 
     p.mb-5(data-aos='fade-right') Cuando se comienza el proceso de diseño de una base de datos, no es suficiente con conocer y tener experticia en el diccionario de datos; el reto está en poder diseñar una base de datos con una estructura estable y lógica tal que:
 
-    .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
-      i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Cada registro contiene:
+    //- .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
+    //-   i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
+    //-   h3.mb-0 Cada registro contiene:
     .row.justify-content-center.mb-5
       .col-lg-1.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema2/18.svg', alt='')
       .col-lg-11(data-aos="fade-right")
@@ -483,7 +484,7 @@
       .col-lg-9(data-aos="fade-right")
         .cajon.color-primario.p-4.mb-4(style="background-color: #e7f3fe")
           p.mb-0 Por lo anterior, se hace hincapié, en que lo más importante de un sistema de base de datos es su diseño, ya que, de este depende su ciclo de vida. Una base de datos implementada sobre un buen diseño, tiene más alta probabilidad de durar en un mundo con requerimientos cambiantes, que una base de datos con un diseño pobre. De esta forma, un buen proceso de diseño tendrá un rendimiento proporcional, aunque aumente su tamaño y será lo suficientemente flexible para incorporar nuevos requerimientos o características adicionales.
-        p Por otra parte, la inconsistencia de datos es el concepto más cotidiano y se refiere a tener información en una base de datos, donde debería ser igual y no lo es. Un ejemplo sería un estudiante de una universidad, que en una parte de la base de datos aparece como no aprobado en Calculo I, y en otra ubicación, de la misma base de datos, aparece como aprobado.
+        p Por otra parte, la inconsistencia de datos es el concepto más cotidiano y se refiere a tener información en una base de datos, donde debería ser igual y no lo es. Un ejemplo sería un estudiante de una universidad, que en una parte de la base de datos aparece como no aprobado en Cálculo I, y en otra ubicación, de la misma base de datos, aparece como aprobado.
           br
           br
           |Teniendo en cuenta lo anterior, un paso importante en el diseño de una base de datos, es el proceso de normalización.
@@ -610,7 +611,7 @@
                   h3.mb-1 Anexo
                   p.text-small A través del siguiente documento se pueden conocer las cinco formas normales:
                 .col.mb-3.mb-sm-0
-                  a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+                  a.boton.color-acento-botones(:href="obtenerLink('downloads/doc2.pdf')" target="_blank" type="application/pdf")
                     span(style='color: #12263f') Descargar 
                     i.fas.fa-file-download(style='color: #12263f')    
     Separador  

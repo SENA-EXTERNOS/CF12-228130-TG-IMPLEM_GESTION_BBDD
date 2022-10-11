@@ -46,10 +46,10 @@
             ul.lista-ul--color
               li
                 i.fas.fa-angle-right
-                | La clave primaria, en la entidad la clave primaria es aquel atributo que es único para cada registro, se representa por medio de una línea continua de forma subrayado en el nombre del atributo correspondiente. 
+                p.mb-0 #[b La clave primaria], en la entidad la clave primaria es aquel atributo que es único para cada registro, se representa por medio de una línea continua de forma subrayado en el nombre del atributo correspondiente. 
               li
                 i.fas.fa-angle-right
-                |La clave foránea, estas claves son las encargadas de demostrar la respectiva relación que se tiene en dos entidades, se representa por una línea subrayada de forma punteada debajo del nombre del atributo candidato de la relación.
+                p.mb-0 #[b La clave foránea], estas claves son las encargadas de demostrar la respectiva relación que se tiene en dos entidades, se representa por una línea subrayada de forma punteada debajo del nombre del atributo candidato de la relación.
     p.mb-5(data-aos='fade-right')  En la siguiente representación gráfica se observan las figuras y lo que cada una representa:
     SlyderF.slyder-100.mb-5(columnas="col-lg-6 col-xl-4")
       .tarjeta.p-4(style='background-color: #afcee9').h-100
@@ -85,7 +85,7 @@
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Ejemplo de modelo entidad relación
-    p.mb-5(data-aos='fade-right')  En la siguiente representación gráfica se observan las figuras y lo que cada una representa:
+    p.mb-5(data-aos='fade-right')  En la siguiente imagen se puede observar un ejemplo  de modelo de Entidad - Relación (E/R): 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         img(src='@/assets/curso/temas/tema3/8.svg' alt='AvatarTop') 
