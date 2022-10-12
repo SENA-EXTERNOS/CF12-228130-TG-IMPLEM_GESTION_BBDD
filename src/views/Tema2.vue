@@ -452,16 +452,16 @@
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | #[b Unicidad de ocurrencias:] no deben existir dos filas o registros con la misma información.
+                p.mb-0 #[b Unicidad de ocurrencias:] no deben existir dos filas o registros con la misma información.
               li
                 i.fas.fa-check
-                | #[b Múltiples atributos:] las entidades deben tener más de un atributo, se deben evitar entidades de solo una ocurrencia.
+                p.mb-0 #[b Múltiples atributos:] las entidades deben tener más de un atributo, se deben evitar entidades de solo una ocurrencia.
               li
                 i.fas.fa-check
-                | #[b Múltiples ocurrencias:] complementando la anterior característica, se deben tener mínimo dos atributos en cada entidad.
+                p.mb-0 #[b Múltiples ocurrencias:] complementando la anterior característica, se deben tener mínimo dos atributos en cada entidad.
               li
                 i.fas.fa-check
-                | #[b Exclusividad de ocurrencias y de atributos:] las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
+                p.mb-0 #[b Exclusividad de ocurrencias y de atributos:] las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.4 Normalización 

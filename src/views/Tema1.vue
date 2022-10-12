@@ -244,19 +244,19 @@
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #084a93')
-            | Una de las ventajas es la #[b sencillez], es muy fácil trabajar en ella permitiendo la creación y la accesibilidad al momento de ampliar la base de datos.
+            p.mb-0 Una de las ventajas es la #[b sencillez], es muy fácil trabajar en ella permitiendo la creación y la accesibilidad al momento de ampliar la base de datos.
           li
             i.fas.fa-check(style='color: #084a93')
-            | La #[b uniformidad] de los datos, favoreciendo que no exista la duplicidad en los registros.
+            p.mb-0 La #[b uniformidad] de los datos, favoreciendo que no exista la duplicidad en los registros.
           li
             i.fas.fa-check(style='color: #084a93')
-            | La #[b accesibilidad], ya que permite que varios usuarios accedan a la base de datos al mismo tiempo, también implementa un sistema de bloqueos a los usuarios al momento de la actualización de los datos, para evitar posibles conflictos entre usuarios.
+            p.mb-0 La #[b accesibilidad], ya que permite que varios usuarios accedan a la base de datos al mismo tiempo, también implementa un sistema de bloqueos a los usuarios al momento de la actualización de los datos, para evitar posibles conflictos entre usuarios.
           li
             i.fas.fa-check(style='color: #084a93')
-            | La #[b atomicidad], donde define si una operación fue terminada o no, para que, en caso de fallas en el sistema, determinada operación no quede a medias.
+            p.mb-0 La #[b atomicidad], donde define si una operación fue terminada o no, para que, en caso de fallas en el sistema, determinada operación no quede a medias.
           li
             i.fas.fa-check(style='color: #084a93')
-            | El #[b rendimiento], son bases de datos que mantienen un buen rendimiento en cuanto a la diversidad de herramientas que contiene y así como, una rápida experiencia de usuario.
+            p.mb-0 El #[b rendimiento], son bases de datos que mantienen un buen rendimiento en cuanto a la diversidad de herramientas que contiene y así como, una rápida experiencia de usuario.
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
@@ -266,10 +266,10 @@
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #01c2e8')
-            | El costo de #[b mantenimiento], la gran mayoría de las empresas tienen un crecimiento muy dinámico, y los registros almacenados en las bases de datos van a tener muchas modificaciones y un volumen en su crecimiento.
+            p.mb-0 El costo de #[b mantenimiento], la gran mayoría de las empresas tienen un crecimiento muy dinámico, y los registros almacenados en las bases de datos van a tener muchas modificaciones y un volumen en su crecimiento.
           li
             i.fas.fa-check(style='color: #01c2e8')
-            | Espacio #[b limitado], a medida que crece el volumen de los datos, va a requerir de más espacio.
+            p.mb-0 Espacio #[b limitado], a medida que crece el volumen de los datos, va a requerir de más espacio.
     //- .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
     //-   i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
     //-   h3.mb-0 Ventajas y desventajas de las bases de datos No relacionales (NoSQL)
@@ -285,20 +285,20 @@
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #084a93')
-            | #[b Se ejecutan en máquina con poco recurso.]
+            p.mb-0 #[b Se ejecutan en máquina con poco recurso.]
           li
             i.fas.fa-check(style='color: #084a93')
-            |  #[b Escalabilidad horizontal], en busca de un mejor rendimiento se pueden añadir nuevos nodos, indicándole al sistema los nodos que están disponibles.
+            p.mb-0  #[b Escalabilidad horizontal], en busca de un mejor rendimiento se pueden añadir nuevos nodos, indicándole al sistema los nodos que están disponibles.
           li
             i.fas.fa-check(style='color: #084a93')
-            | #[b Manejan gran cantidad de datos], debido a que implementan una estructura distribuida, en varios casos mediante tablas hash.
+            p.mb-0 #[b Manejan gran cantidad de datos], debido a que implementan una estructura distribuida, en varios casos mediante tablas hash.
 
           li
             i.fas.fa-check(style='color: #084a93')
-            | #[b No generan cuellos de botella], el principal problema de los sistemas SQL, es que se requiere trascribir cada sentencia que se va a ejecutar, y cada sentencia al ser más compleja necesita de un nivel de ejecución aún más complejo, donde muchas peticiones pueden volver lento al sistema. 
+            p.mb-0 #[b No generan cuellos de botella], el principal problema de los sistemas SQL, es que se requiere trascribir cada sentencia que se va a ejecutar, y cada sentencia al ser más compleja necesita de un nivel de ejecución aún más complejo, donde muchas peticiones pueden volver lento al sistema. 
           li
             i.fas.fa-check(style='color: #084a93')
-            | Algunos tipos de almacén de bases de datos NoSQL incluyen diferentes tipos de almacenes como por ejemplo el almacén de columnas, de documentos, de key-value store, de gráficos, de objetos, de XML y otros modos de almacén de datos.
+            p.mb-0 Algunos tipos de almacén de bases de datos NoSQL incluyen diferentes tipos de almacenes como por ejemplo el almacén de columnas, de documentos, de key-value store, de gráficos, de objetos, de XML y otros modos de almacén de datos.
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
