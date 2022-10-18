@@ -308,16 +308,16 @@
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #01c2e8')
-            | En este tipo de bases de datos #[b no se admiten funciones de fiabilidad.]
+            p.mb-0 En este tipo de bases de datos #[b no se admiten funciones de fiabilidad.]
           li
             i.fas.fa-check(style='color: #01c2e8')
-            | #[b Complejidad en el sistema] para incrementar el grado de características de las bases de datos, ya que, el desarrollador debe implementar su propio código.
+            p.mb-0 #[b Complejidad en el sistema]  para incrementar el grado de características de las bases de datos, ya que, el desarrollador debe implementar su propio código.
           li
             i.fas.fa-check(style='color: #01c2e8')
-            | #[b Incompatibilidad con consultas SQL], significa que se necesita construir su propio lenguaje para ejecutar las diferentes consultas.
+            p.mb-0 #[b Incompatibilidad con consultas SQL], significa que se necesita construir su propio lenguaje para ejecutar las diferentes consultas.
           li
             i.fas.fa-check(style='color: #01c2e8')
-            | #[b No son transaccionales.]
+            p.mb-0 #[b No son transaccionales.]
     .row.justify-content-center.mb-5
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
