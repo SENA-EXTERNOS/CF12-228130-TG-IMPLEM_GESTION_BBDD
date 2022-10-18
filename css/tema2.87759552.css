@@ -1,0 +1,1 @@
+.actividad{background-color:#f2f2f2}.cajon-b.color-acento-contenido:before{opacity:.2}.tarjeta-up{position:relative;overflow:hidden}.tarjeta-up__contenido{position:absolute;height:100%;bottom:0;left:0;width:100%;transform:translateY(80%);transition:transform .3s ease-in-out}.tarjeta-up:hover .tarjeta-up__contenido{transform:translateY(0)}
