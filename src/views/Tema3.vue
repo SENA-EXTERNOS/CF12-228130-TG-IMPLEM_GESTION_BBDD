@@ -34,13 +34,13 @@
             p Las entidades se representan gráficamente mediante un rectángulo y en el interior lleva el nombre correspondiente. El nombre de la entidad no se debe repetir, ya que cada una de ellas tiene su propio nombre. 
               br
               br
-              |Ejemplo de entidades: Profesores, empleados, estudiantes, clientes, proveedores, etc. Cada una con ciertas características que describen y diferencian cada elemento.
+              |Ejemplo de entidades: profesores, empleados, estudiantes, clientes, proveedores, etc. Cada una con ciertas características que describen y diferencian cada elemento.
           div(titulo="Relaciones")
-            p Las relaciones son las asociaciones que se describen entre dos atributos (campos) de dos tablas para compartir información (Aragón, et al, 2018), esas respectivas relaciones entre las entidades, se representan por medio de un rombo describiendo en el interior la acción de la relación. 
+            p Las relaciones son las asociaciones que se describen entre dos atributos (campos) de dos tablas para compartir información (Aragón, y otros2018), esas respectivas relaciones entre las entidades, se representan por medio de un rombo describiendo en el interior la acción de la relación.
           div(titulo="Atributos")
-            p Una entidad está representada por un grupo de atributos. Estos son los encargados de describir una entidad específica, teniendo en cuenta cada una de sus características o propiedades, se representa por medio de una elipse o un círculo con su nombre correspondiente en el interior. Por ejemplo, la entidad “vehículo” se puede describir con los atributos: marca, modelo, color, placa, numero, pasajeros, etc. 
+            p Una entidad está representada por un grupo de atributos. Estos son los encargados de describir una entidad específica, teniendo en cuenta cada una de sus características o propiedades, se representa por medio de una elipse o un círculo con su nombre correspondiente en el interior. Por ejemplo, la entidad “vehículo” se puede describir con los atributos: marca, modelo, color, placa, número, pasajeros, etc.
           div(titulo="Cardinalidad")
-            p Esta cardinalidad dentro del modelo se representa en los extremos de cada relación. La cardinalidad expresa cuántas entidades de un extremo de la relación están relacionadas con cuántas entidades del otro extremo. Pueden ser “uno a uno”', “uno a varios”' o “varios a varios” (Muñoz et al, 2018).
+            p Esta cardinalidad dentro del modelo se representa en los extremos de cada relación. La cardinalidad expresa cuántas entidades de un extremo de la relación están relacionadas con cuántas entidades del otro extremo. Pueden ser “uno a uno”', “uno a varios”' o “varios a varios”. (Muñoz et al, 2018)
           div(titulo="Clave en una entidad")
             p Dentro del modelo entidad / relación están representadas las claves primarias y claves foráneas: 
             ul.lista-ul--color
@@ -92,8 +92,10 @@
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Listado de herramientas para modelado de bases de datos
-    p.mb-5(data-aos='fade-right') En la actualidad existe una gran variedad de herramientas que son muy útiles al momento de realizar el respectivo modelado de la base de datos. Las herramientas también dependen mucho de la capacidad de hardware del equipo donde se desean instalar. También se pueden utilizar herramientas que funcionan perfectamente por medio de un navegador web, permitiendo una gran eficiencia y disponibilidad, al momento de la recuperación de la información. 
-    h4(data-aos='fade-right') Herramientas en la nube:
+    p.mb-5(data-aos='fade-right') En la actualidad existe una gran variedad de herramientas que son muy útiles al momento de realizar el respectivo modelado de la base de datos. Las herramientas también dependen mucho de la capacidad de hardware del equipo donde se desean instalar. También se pueden utilizar herramientas que funcionan perfectamente por medio de un navegador web, permitiendo una gran eficiencia y disponibilidad, al momento de la recuperación de la información.
+      br
+      br
+      |Herramientas en la nube: 
     .tarjeta--container.row.mb-5(data-aos="zoom-in")
       .col-md.tarjeta.color-secundario.p-5
         .row.justify-content-center.mb-4
@@ -139,33 +141,35 @@
       .col-lg-10(data-aos="zoom-in")
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris2" )
           div(titulo="Diccionario de datos")
-            p Es un conjunto de descripciones que comprende las características lógicas y puntuales de los datos que se van a implementar en el sistema, incluyendo nombre, contenido, alias y organización. Este identifica plenamente donde se implementan los datos y los sitios donde se requiere el acceso de forma eficiente, se construye durante el análisis del flujo de datos y, sirve de apoyo a los diferentes analistas que participan en los requerimientos del sistema. 
+            p Es un conjunto de descripciones que comprende las características lógicas y puntuales de los datos que se van a implementar en el sistema, incluyendo nombre, contenido, alias y organización. Este identifica plenamente donde se implementan los datos y los sitios dónde se requiere el acceso de forma eficiente, se construye durante el análisis del flujo de datos y, sirve de apoyo a los diferentes analistas que participan en los requerimientos del sistema.
+              br
               br
               |En un diccionario de datos se encuentra alojado cada uno de los elementos que forman parte del flujo de los datos del sistema. Además, almacena cada detalle y descripción de los diferentes datos implementados.
           div(titulo="Características")
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | #[b Registra transacciones:] registra las actividades que realiza la empresa mientras opera el sistema.
+                p.mb-0 #[b Registra transacciones:] registra las actividades que realiza la empresa mientras opera el sistema.
+              li
+                i.fas.fa-check
+                p.mb-0 #[b Preguntas:] solicitudes de procesamiento y recuperación de la información para generar una respuesta.
+              li
+                i.fas.fa-check
+                p.mb-0 #[b Bases de datos y archivos:] se detallan las transacciones y registros que son cruciales para la organización.
+              li
+                i.fas.fa-check
+                p.mb-0 #[b Capacidad del sistema:] habilidades del sistema para realizar, almacenar y procesar transacciones y datos.
 
-              li
-                i.fas.fa-check
-                | #[b Preguntas:] solicitudes de procesamiento y recuperación de la información para generar una respuesta.
-              li
-                i.fas.fa-check
-                | #[b Bases de datos y archivos:] se detallan las transacciones y registros que son cruciales para la organización.
-              li
-                i.fas.fa-check
-                |#[b Capacidad del sistema:] habilidades del sistema para realizar, almacenar y procesar transacciones y datos.
           div(titulo="Estructura")
             p Contenido de un registro del diccionario; el diccionario contiene dos tipos de descripciones para el flujo de datos del sistema:
+
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | #[b Elemento dato:] son los bloques principales para todos los demás datos del sistema. Se agrupan para dar forma a la estructura de datos.
+                p.mb-0 #[b Elemento dato:] son los bloques principales para todos los demás datos del sistema. Se agrupan para dar forma a la estructura de datos.
               li
                 i.fas.fa-check
-                | #[b Descripción:] cada registro en el diccionario, consiste en un conjunto de detalles que representa la función de cada uno de los datos utilizados o producidos por el sistema.
+                p.mb-0 #[b Descripción:] cada registro en el diccionario, consiste en un conjunto de detalles que representa la función de cada uno de los datos utilizados o producidos por el sistema.
     h4 Cada registro contiene:
     .row.justify-content-center.mb-5
       .col-lg-2.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema3/13.svg', alt='Texto que describa la imagen')
@@ -189,11 +193,16 @@
           li
             i.fas.fa-check
             | #[b Estructura de los datos:] es un grupo de datos que están relacionados con otros y que en conjunto describen un componente del sistema.
-    h4 Ejemplo de diccionario de datos:
+    p Ejemplo de diccionario de datos:
     .row.justify-content-center.mb-5
       .col-lg-10
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 4
+          br
+          span.fst-italic Ejemplo de diccionario de datos
         .tabla-a.color-acento-contenido.mb-5
           table
+            caption #[b Nota:] tomado de: Ingeniería de software (s/f). Diccionario de datos de un software. https://ingsoftware.weebly.com/diccionario-de-datos-de-un-software.html
             thead
               tr
                 th(colspan='2') Nombre de Archivo: BDPlantilla
@@ -210,67 +219,67 @@
                 td CURP
                 td 18
                 td Caracter
-                td Clave Unica de Registro de Población
+                td Clave Única de Registro de Población.
               tr
                 td cPaterno
                 td 30
                 td Caracter
-                td Apellido paterno del Empleado 
+                td Apellido paterno del empleado.
               tr
                 td cMaterno
                 td 30
                 td Caracter
-                td Apellido materno del empleado
+                td Apellido materno del empleado.
               tr
                 td cNombre
                 td 45
                 td Caracter
-                td Nombre del Empleado.
+                td Nombre del empleado.
               tr
                 td cDomicilio
                 td 60
                 td Caracter
-                td Domicilio actual donde reside el empleado
+                td Domicilio actual donde reside el empleado.
               tr
                 td cColonia
                 td 45
                 td Caracter
-                td Colonia del domicilio donde reside el empleado
+                td Colonia del domicilio donde reside el empleado.
               tr
                 td cCiudad
                 td 45
                 td Caracter
-                td Ciudad donde reside el empleado
+                td Ciudad donde reside el empleado.
               tr
                 td cEstado
                 td 45
                 td Caracter
-                td Entidad federativa de residencia del empleado
+                td Entidad federativa de residencia del empleado.
               tr
                 td cTelefono
                 td 12
                 td Caracter
-                td Número telefónico del empleado
+                td Número telefónico del empleado.
               tr
                 td nPostal
                 td 6
                 td Numérico
-                td Código postal del domicilio del empleado
+                td Código postal del domicilio del empleado.
               tr
                 td cFamiliar
                 td 65
                 td Caracter
-                td Nombre de un familiar directo del empleado
+                td Nombre de un familiar directo del empleado.
               tr
                 td  FDomicilio
                 td 65
                 td Caracter
-                td Domicilio de familiar directo del empleado
+                td Domicilio de familiar directo del empleado.
               tr
                 td FTelefono25
                 td 12
                 td Caracter
-                td Teléfono de familiar directo del empleado
+                td Teléfono de familiar directo del empleado.
               tr
                 td(colspan='2') Relaciones:
                   br
@@ -279,7 +288,7 @@
                   br
                   | CURP, cPaterno, cMaterno
         .cajon.color-acento-contenido(style="background-color:#ffecc1 ").p-4.mb-4
-          p.mb-0 Recuerde explorar los demás recursos que están disponibles en este componente formativo, puede ubicarse en el menú principal en donde encontrará la síntesis, una actividad didáctica, material complementario, entre otros.   
+          p.mb-0 Recuerde explorar los demás recursos que se encuentran disponibles en este componente formativo; para ello, diríjase al menú principal, donde encontrará la síntesis, una actividad didáctica para reforzar los conceptos estudiados, material complementario, entre otros.   
 
     
 </template>

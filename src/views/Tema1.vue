@@ -18,9 +18,19 @@
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #ffecc1 ")
           p.mb-0 En la actualidad la información operativa y estratégica de la que dispone una empresa, se encuentra estructurada en bases de datos. Teniendo en cuenta que estos sistemas de gestión manipulan, operan y administran cada uno de los datos e información valiosa de la organización, gran parte del presupuesto se invierte en BD, tanto en copias de seguridad, actualizaciones, mejoraras del rendimiento, accesibilidad, como en el cuidado de la calidad de los datos. Un objetivo crucial para el CEO de la compañía es garantizar la gestión en las bases de datos, ya que es primordial para ejecutar el rol de soporte de las diferentes infraestructuras y procesos que garantizan sus activos.
     Separador
-    #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.1 Conceptos generales sobre BD
-    p.mb-4(data-aos='fade-right') Como primera medida debe definirse el término “base de datos”, este es un conjunto de datos clasificados metódicamente y correlaciones entre ellos, con el propósito de lograr una eficiencia y valor de esos datos. “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos” (Marqués, 2010).
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h3.mb-0 Conceptos generales sobre BD
+    .row.justify-content-center.mb-5
+      .col-lg-10
+        .bloque-derecha
+          .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
+            .bloque-texto-g__img(
+              :style="{'background-image':`url(${require('@/assets/curso/temas/tema1/c1.jpg')})`}"
+            )
+            .bloque-texto-g__texto.p-4.w-60
+              p.mb-0 Como primera medida debe definirse el término “base de datos”, este es un conjunto de datos clasificados metódicamente y correlaciones entre ellos, con el propósito de lograr una eficiencia y valor de esos datos. #[b “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos”.] (Marqués, 2010)
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Origen bases de datos
@@ -41,10 +51,10 @@
               img(src='@/assets/curso/temas/tema1/2.jpg', alt='' style='border-radius: 20px')
         .row.justify-content-center(titulo="Década de 1950")
           .col-md-6.mb-4.mb-md-0
-            p En el año 1884 se creó una máquina, que además de ser automática utilizaba tarjetas perforadas, su creador fue Herman Hollerith quien fue nombrado el primer ingeniero estadístico de la historia. Esta máquina contribuyó al manejo de la información en los censos, que antes eran manuales.
+            p A mediados de la época de los años 50, se dio origen a las famosas cintas magnéticas; su función primordial era la automatización de la información y crear sus respectivos respaldos. Esto surgió para suplir la necesidad de las grandes industrias.
               br
               br
-              |Como consecuencia de lo anterior, a mediados de la época de los años 50 se dio origen a las famosas cintas magnéticas, su función primordial era la automatización de la información y crear sus respectivos respaldos. Esto surgió para suplir la necesidad de las grandes industrias.
+              |Esta innovación fue posible gracias a que años anteriores, especialmente por 1884, se creó una máquina que, además de ser automática, utilizaba tarjetas perforadas, su creador fue Herman Hollerith quien fue nombrado el primer ingeniero estadístico de la historia. Esta máquina contribuyó al manejo de la información en los censos, que antes eran manuales.
           .col-md-4
             figure
               img(src='@/assets/curso/temas/tema1/3.jpg', alt='' style='border-radius: 20px')
@@ -109,15 +119,17 @@
               img(src='@/assets/curso/temas/tema1/8.jpg', alt='' style='border-radius: 20px')
     Separador
 
-    #t_1_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.2 Características de un sistema de BD  
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h3.mb-0 Características de un sistema de BD  
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-1.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema1/9.svg', alt='')
       .col-lg-11(data-aos="fade-left")
         p.mb-0 Un sistema de bases de datos es un conjunto de programas que permiten su gestión. En pocas palabras, permite realizar las operaciones de almacenar, modificar, listar y eliminar la información de estas. Su principal función es permitir la conectividad entre las bases de datos y los usuarios finales, o programas correspondientes; estructurando los datos y permitiendo su acceso.
           br
           br
-          |Las principales características de un SGBD (sistema gestor de bases de datos) son:
+          |Las principales características de un SGBD (Sistema Gestor de Bases de Datos) son:
     SlyderF.slyder-100.mb-5(columnas="col-lg-6 col-xl-4")(data-aos="zoom-in")
       .tarjeta-avatar
         img(src='@/assets/curso/temas/tema1/10.svg' alt='AvatarTop' style='width: 135px')
@@ -162,8 +174,10 @@
           .text-center.mt-4
             p Posibilita la multiplicidad de acceso a los datos.
     Separador
-    #t_1_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.3 Arquitectura de los sistemas de BD
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h3.mb-0 Arquitectura de los sistemas de BD
     p.mb-5(data-aos='fade-right') Generalmente cuando se aborda el tema de arquitectura de un SGBD, se habla de una arquitectura de esquemas, encontrando:
     .tarjeta--container.row.mb-5(data-aos="zoom-in")
       .col-md.tarjeta.color-secundario.p-5
@@ -171,80 +185,96 @@
           .col-6
             figure
               img(src='@/assets/curso/temas/tema1/18.svg', alt='Texto que describa la imagen')
-        h2.text-center Esquema conceptual:
+        h2.text-center Esquema conceptual
         p.text-center Su principal objetivo es ocultar detalles de la estructura física del almacenamiento, concentra su funcionalidad en las entidades, restricciones, tipos de datos y las relaciones.
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema1/19.svg', alt='Texto que describa la imagen')
-        h2.text-center Esquema interno:
+        h2.text-center Esquema interno
         p.text-center Es el encargado de describir la estructura física del almacenamiento en la base de datos.
       .col-md.tarjeta.color-secundario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema1/20.svg', alt='Texto que describa la imagen')
-        h2.text-center Esquema externo:
+        h2.text-center Esquema externo
         p.text-center Describe las bases de datos para los diferentes usuarios.
+    p.mb-5(data-aos='fade-right')  A continuación, se observa la relación entre los diferentes esquemas:
     .row.justify-content-center.mb-5
-      .col-lg-10(data-aos="zoom-in"): img(src='@/assets/curso/temas/tema1/21.svg', alt='')
+      .col-lg-10(data-aos="zoom-in")
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 1
+          br
+          span.fst-italic Arquitectura de los sistemas de bases de datos 
+        img(src='@/assets/curso/temas/tema1/21.svg', alt='')
     Separador
-    #t_1_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.4 Tipos de BD (relacional - no relacional)
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h3.mb-0 Tipos de BD (relacional - no relacional)
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
-      i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Bases de datos Relacional
+      i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
+      h5.mb-0 Bases de datos Relacional
     .bloque-derecha.mb-5(data-aos="zoom-in")
       .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
         .bloque-texto-g__img.d-flex.align-items-center( style="background-color: #FEE3A8").p-4
           img(src='@/assets/curso/temas/tema1/23.svg', alt='' style='width: 427px').m-auto
         .bloque-texto-g__texto--border.p-2.d-inline-block
           .bloque-texto-g__texto.p-4
-            p.mb-0 Son una colección de elementos conformados por datos debidamente organizados y estructurados en un conjunto de tablas relacionadas entre sí. Donde se puede tener acceso a los datos, de forma fácil y de varias maneras diferentes, sin tener que afectar a la organización de las distintas tablas que conforman la base de datos (Mendoza y López, 2018). La interfaz estándar e intuitiva al usuario y su aplicación a la base de datos, se hace por medio del lenguaje de consultas estructuradas (SQL). Los diferentes comandos SQL se emplean para la manipulación de los datos, como realizar diferentes consultas para obtener información de la base de datos, eliminar datos, editar y la recopilación de datos para informes.
+            p.mb-0 Son una colección de elementos conformados por datos debidamente organizados y estructurados en un conjunto de tablas relacionadas entre sí. Donde se puede tener acceso a los datos, de forma fácil y de varias maneras diferentes, sin tener que afectar a la organización de las distintas tablas que conforman la base de datos. (Mendoza y López, 2018)
+              br
+              br
+              |La interfaz estándar e intuitiva al usuario y su aplicación a la base de datos, se hace por medio del lenguaje de consultas estructuradas (SQL). Los diferentes comandos SQL se emplean para la manipulación de los datos, como realizar diferentes consultas para obtener información de la base de datos, eliminar datos, editar y la recopilación de datos para informes.
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .cajon.color-acento-botones.p-4.mb-4(style="background-color: #d9faff ")
           p.mb-0 Las bases de datos relacionales tienen como objetivo organizar la información en partes pequeñas, que se relacionan mediante identificadores. Además, son bases de datos más robustas, tienen una gran capacidad de almacenamiento, contienen menos vulnerabilidad ante posibles fallas; todas estas son unas de sus principales características.
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
-      i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Bases de datos No Relacional
+      i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
+      h5.mb-0 Bases de datos No Relacional
     .row.justify-content-center.mb-5
       .col-lg-3.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema1/24.svg', alt='')
       .col-lg-9(data-aos="fade-left")
         div(style="background-color: #00defc").p-3
           .border-dash.p-2
             .bg-white.p-4
-              p.mb-0 Este tipo de bases de datos no relacional es ideal para construir aplicaciones modernas, gracias a que está conformada por esquemas flexibles y diseñadas específicamente para modelos de datos especiales. Son reconocidas en el desarrollo de software, al ser de fácil construcción y manejo, permiten una gran escalabilidad y funcionalidad en el rendimiento. Este tipo de bases de datos usan una gran variedad de modelos de datos conformados por: documentos, clave – valor, grafos, en-memoria y búsqueda.
+              p.mb-0 Las bases de datos no relacionales son ideales para construir aplicaciones modernas, gracias a que está conformada por esquemas flexibles y diseñadas específicamente para modelos de datos especiales. Son reconocidas en el desarrollo de software, al ser de fácil construcción y manejo, permiten una gran escalabilidad y funcionalidad en el rendimiento. Estas bases de datos utilizan una gran variedad de modelos de datos conformados por: documentos, clave – valor, grafos, en-memoria y búsqueda.
                 br
                 br
-                |Las bases de datos no relacionales son también llamadas bases de datos NoSQL, no disponen de un identificador que sirve para relacionar entre un conjunto de datos y otro. La información se organiza generalmente mediante documentos, es una base de datos muy práctica cuando no se tiene claridad en el esquema de datos que se va implementar.
+                |Las bases de datos no relacionales son también llamadas bases de datos NoSQL, no disponen de un identificador que sirve para relacionar entre un conjunto de datos y otro. La información se organiza generalmente mediante documentos, es una base de datos muy práctica cuando no se tiene claridad en el esquema de datos que se va a implementar.     
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="fade-right")
         div(style="background-color: #00defc").p-3
           .border-dash.p-2
             .bg-white.p-4
-              p.mb-0 Un tipo de bases de datos no relacional es la que implementa clave – valor, es una de las más prácticas en cuanto a su funcionalidad. Cada elemento dentro de la base de datos está identificado por una llave única, que la hace más eficiente al momento de recuperar la información, habitualmente la información es almacenada como un objeto binario #[em (BLOB)], se caracterizan en su eficacia al momento de escribir o leer la información.
+              p.mb-0 Una base de datos no relacional es la que implementa clave – valor, es una de las más prácticas en cuanto a su funcionalidad. Cada elemento dentro de la base de datos está identificado por una llave única, que la hace más eficiente al momento de recuperar la información, habitualmente la información es almacenada como un objeto binario (BLOB), se caracterizan en su eficacia al momento de escribir o leer la información.
       .col-lg-6(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/25.svg', alt='')
     Separador
-    #t_1_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.5 Ventajas y desventajas
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h3.mb-0 Ventajas y desventajas
     p.mb-5(data-aos='fade-right') A continuación, se muestra un comparativo entre las ventajas y desventajas de estas dos bases de datos:
     //- .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
     //-   i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
     //-   h3.mb-0 Ventajas y desventajas de las bases de datos relacionales
+    ul.lista-ul--color.mb-5
+      li
+        i.fas.fa-check
+        h5.mb-0 Ventajas y desventajas de las bases de datos relacionales:
     .tarjeta--container.row.mb-5
       .col-md.tarjeta.color-secundario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema1/ventajas.svg', alt='')
-
-        h2.text-center Ventajas de las bases de datos relacionales
+        h3.text-center Ventajas
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #084a93')
-            p.mb-0 Una de las ventajas es la #[b sencillez], es muy fácil trabajar en ella permitiendo la creación y la accesibilidad al momento de ampliar la base de datos.
+            p.mb-0 Una de las ventajas es la #[b sencillez], es muy fácil trabajar con ella permitiendo la creación y la accesibilidad al momento de ampliar la base de datos.
           li
             i.fas.fa-check(style='color: #084a93')
             p.mb-0 La #[b uniformidad] de los datos, favoreciendo que no exista la duplicidad en los registros.
@@ -256,13 +286,13 @@
             p.mb-0 La #[b atomicidad], donde define si una operación fue terminada o no, para que, en caso de fallas en el sistema, determinada operación no quede a medias.
           li
             i.fas.fa-check(style='color: #084a93')
-            p.mb-0 El #[b rendimiento], son bases de datos que mantienen un buen rendimiento en cuanto a la diversidad de herramientas que contiene y así como, una rápida experiencia de usuario.
+            p.mb-0 El #[b rendimiento], son bases de datos que mantienen un buen rendimiento en cuanto a la diversidad de herramientas que contienen, como una rápida experiencia de usuario.
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema1/desventajas.svg', alt='')
-        h2.text-center Desventajas de las bases de datos no relacionales
+        h3.text-center Desventajas
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #01c2e8')
@@ -273,6 +303,10 @@
     //- .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
     //-   i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
     //-   h3.mb-0 Ventajas y desventajas de las bases de datos No relacionales (NoSQL)
+    ul.lista-ul--color.mb-5
+      li
+        i.fas.fa-check
+        h5.mb-0 Ventajas y desventajas de las bases de datos no relacionales (NoSQL):
     .tarjeta--container.row.mb-5
       .col-md.tarjeta.color-secundario.p-5
         .row.justify-content-center.mb-4
@@ -280,7 +314,7 @@
             figure
               img(src='@/assets/curso/temas/tema1/ventajas.svg', alt='')
 
-        h2.text-center Ventajas de las bases de datos No relacionales (NoSQL):
+        h2.text-center Ventajas 
         p La forma de almacenamiento de la información presenta ciertas ventajas a comparación de las bases de datos relacionales:
         ul.lista-ul--color
           li
@@ -291,20 +325,23 @@
             p.mb-0  #[b Escalabilidad horizontal], en busca de un mejor rendimiento se pueden añadir nuevos nodos, indicándole al sistema los nodos que están disponibles.
           li
             i.fas.fa-check(style='color: #084a93')
-            p.mb-0 #[b Manejan gran cantidad de datos], debido a que implementan una estructura distribuida, en varios casos mediante tablas hash.
+            p.mb-0 #[b Manejan gran cantidad de datos], debido a que implementan una estructura distribuida, en varios casos mediante tablas #[em hash.]
 
           li
             i.fas.fa-check(style='color: #084a93')
-            p.mb-0 #[b No generan cuellos de botella], el principal problema de los sistemas SQL, es que se requiere trascribir cada sentencia que se va a ejecutar, y cada sentencia al ser más compleja necesita de un nivel de ejecución aún más complejo, donde muchas peticiones pueden volver lento al sistema. 
+            p.mb-0 #[b No generan cuellos de botella], el principal problema de los sistemas SQL, es que se requiere trascribir cada sentencia que se va a ejecutar, y cada sentencia al ser más compleja necesita de un nivel de ejecución aún más complejo, donde muchas peticiones pueden volver lento al sistema.
           li
             i.fas.fa-check(style='color: #084a93')
-            p.mb-0 Algunos tipos de almacén de bases de datos NoSQL incluyen diferentes tipos de almacenes como por ejemplo el almacén de columnas, de documentos, de key-value store, de gráficos, de objetos, de XML y otros modos de almacén de datos.
+            p.mb-0 Algunos tipos de almacén de bases de datos NoSQL #[b incluyen diferentes tipos de almacenes] como por ejemplo el almacén de columnas, de documentos, de #[em key-value store], de gráficos, de objetos, de XML y otros modos de almacén de datos.
+          li
+            i.fas.fa-check(style='color: #084a93')
+            p.mb-0 Algunos tipos de almacén de bases de datos #[b NoSQL incluyen almacenes de columnas], de documentos, de valores de claves, de gráficos, de objetos, de XML y otros modos de almacén de datos.
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema1/desventajas.svg', alt='')
-        h2.text-center Desventajas de las bases de datos No relacionales (NoSQL):
+        h2.text-center Desventajas
         ul.lista-ul--color
           li
             i.fas.fa-check(style='color: #01c2e8')
@@ -321,9 +358,9 @@
     .row.justify-content-center.mb-5
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 1.
+          h5 Figura 1
           br
-          span Uso SQL y de NOSQL
+          span.fst-italic Uso SQL y de NOSQL
         .dots-editados
           ImagenInfografica.color-acento-botones.mb-5
             template(v-slot:imagen)

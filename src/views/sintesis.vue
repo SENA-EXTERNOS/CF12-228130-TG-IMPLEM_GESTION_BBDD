@@ -3,7 +3,7 @@
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    p A continuación, se encuentra el resumen de las temáticas abordadas por medio del siguiente esquema:
+    p El siguiente mapa integra los criterios y especificidades de los conocimientos expuestos en el presente componente formativo.
 
     .row.justify-content-center
       .col-lg-10.mb-5

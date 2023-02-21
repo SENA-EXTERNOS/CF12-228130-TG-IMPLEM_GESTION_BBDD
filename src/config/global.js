@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Conceptos y estructura de las BD',
     descripcionCurso:
-      'Bienvenido estimado aprendiz, el presente componente formativo contiene información sobre la evolución de las bases de datos, los diferentes tipos que encontramos, así como también información sobre el diseño de bases de datos. Les invito a ver el video de presentación para identificar el contexto de aprendizaje.',
+      'En este componente, se aborda una breve historia de la evolución de las bases de datos, donde se especifican los tipos de bases de datos, teniendo como objetivo el modelo relacional. Además, se explica cada uno de los pasos de normalización de los datos, para la obtención del modelo entidad relación.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -35,38 +35,6 @@ export default {
         numero: '1',
         titulo: 'Introducción a los sistemas de BD',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.1',
-            titulo: 'Conceptos generales sobre BD ',
-            hash: 't_1_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.2',
-            titulo: 'Características de un sistema de BD',
-            hash: 't_1_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.3',
-            titulo: 'Arquitectura de los sistemas de BD',
-            hash: 't_1_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.4',
-            titulo: 'Tipos de BD (relacional - no relacional)',
-            hash: 't_1_4',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.5',
-            titulo: 'Ventajas y desventajas',
-            hash: 't_1_5',
-          },
-        ],
       },
 
       {
@@ -158,23 +126,23 @@ export default {
   },
   complementario: [
     {
-      tema: 'Bases de Datos Relacional',
+      tema: 'Introducción a sistemas de bases de datos',
       referencia:
-        'Gómez, Á. P., Jalca, J. J. R., García, J. G., Sánchez, O. Q., Parrales, K. M., & Merino, J. M. (2017). Fundamentos sobre la gestión de base de datos (Vol. 23). 3Ciencias.',
+        'Gómez, Á. P., Jalca, J. J. R., García, J. G., Sánchez, O. Q., Parrales, K. M., & Merino, J. M. (2017). <em>Fundamentos sobre la gestión de base de datos</em> (Vol. 23). 3Ciencias.',
       tipo: 'Libro',
       link:
-        'https://books.google.es/books?hl=es&lr=&id=H0VBDwAAQBAJ&oi=fnd&pg=PA7&dq=fundamentos+de+bases+de+datos&ots=fXjXWGxFXx&sig=1YP_o0q0n07aHlO7fRugedSIatY#v=onepage&q=fundamentos%20de%20bases%20de%20datos&f=false',
+        'https://books.google.es/books?hl=es&lr=&id=H0VBDwAAQBAJ&oi=fnd&pg=PA7&dq=fundamentos+de+bases+de+datos&ots=fXjXWGxFXx&sig=1YP_o0q0n07aHlO7fRugedSIatY#v=onepage&q=fundamentos%20de%20bases%20de%20datos&f=false         ',
     },
     {
-      tema: 'Modelo Entidad /Relación',
+      tema: 'Introducción a sistemas de bases de datos',
       referencia:
         'Moscoso Alanya, H. M. (2019). BASE DE DATOS RELACIONALES: MS-ACCESS Introducción a las bases de datos (BD), consideraciones generales de las BD, MS-ACCESS',
-      tipo: 'Libro      ',
+      tipo: 'Trabajo de grado, especialización',
       link:
         'https://repositorio.une.edu.pe/bitstream/handle/20.500.14039/6280/MONOGRAF%c3%8dA%20-%20MOSCOSO%20ALANYA%20HERMINA%20MONICA%20-%20FAC.pdf?sequence=6&isAllowed=y',
     },
     {
-      tema: 'Normalización',
+      tema: 'Diseño de bases de datos',
       referencia: 'Mendoza, A., & López, R. (2018). Bases de datos.',
       tipo: 'Artículo',
       link: 'https://repositorio.uchile.cl/handle/2250/151632',
@@ -251,7 +219,7 @@ export default {
     },
     {
       referencia:
-        'Capacho, J., & Nieto, W. (2017). Diseño de bases de datos. Diseño de bases de datos (1st ed., p 51). Universidad del Norte.',
+        'Capacho, J., & Nieto, W. (2017). Diseño de bases de datos. Universidad del Norte.',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1i756fj/TN_cdi_jstor_books_j_ctt2050w3s_7',
     },
@@ -268,7 +236,8 @@ export default {
     },
     {
       referencia: 'Marqués, M. (2010). Base de Datos. De Universitat Jaume I.',
-      link: 'http://repositori.uji.es/xmlui/handle/10234/24183',
+      link:
+        'https://bdigital.uvhm.edu.mx/wp-content/uploads/2020/05/Bases-de-Datos.pdf',
     },
     {
       referencia:

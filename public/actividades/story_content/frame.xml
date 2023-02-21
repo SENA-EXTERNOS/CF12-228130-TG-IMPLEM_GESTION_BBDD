@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="Actividad did&amp;#225;ctica" />
+              <option name="title_text" value="Actividad did&amp;#225;ctica_cf12" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1141,6 +1141,9 @@
   </colorschemes>
   <string_tables>
     <string_table name="npnxnanbnsnfns00000000001">
+      <string id="playback_speed_title">~Plaý~bacķ~ Sþe~ed</string>
+      <string id="playback_speed_normal">~Nøřӎ~al</string>
+      <string id="acc_playback_speed">~þlaý~bacķ~ špe~ed</string>
       <string id="more_info">Más información</string>
       <string id="bio">Biografía</string>
       <string id="enable_keyboardshortcuts">Activar atajos del teclado</string>

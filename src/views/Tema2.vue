@@ -24,7 +24,7 @@
               .row.justify-content-between.align-items-center
                 .col-10.mb-3.mb-sm-0.text-white
                   h3.mb-1 Anexo
-                  p.text-small En la actualidad existen varios modelos de bases de datos, para conocerlos se puede descargar el siguiente documento
+                  p.text-small Actualmente, se cuenta con varios modelos de bases de datos; para entender mejor este tema, le invitamos a descargar el siguiente documento.
                 .col.mb-3.mb-sm-0
                   a.boton.color-acento-botones(:href="obtenerLink('downloads/doc1.pdf')" target="_blank" type="application/pdf")
                     span(style='color: #12263f') Descargar 
@@ -103,15 +103,19 @@
             li
               i.fas.fa-check(style="color: #ffb30b")
               p.mb-0 #[b Vistas:] también son llamadas relaciones virtuales, son relaciones que también llevan su nombre correspondiente y derivadas. Cuando se remite al término derivadas, se refiere a que se obtienen a partir de otras relaciones. Las vistas no poseen sus propios datos, los datos que contienen pertenecen a datos almacenados en relaciones base.
-    p.mb-5(data-aos='fade-right') Conceptos del modelo relacional - tipos de relaciones. Es importante conocer los siguientes conceptos al respecto:
+    p.mb-5(data-aos='fade-right') Como se ha indicado, el modelo relacional se basa en el concepto matemático, el cual puede representar el tipo de relaciones que tiene, como se indica en la siguiente figura:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 2
+          br
+          span.fst-italic Conceptos modelo relacional
         img(src='@/assets/curso/temas/tema2/7.svg', alt='')
     p.mb-5(data-aos='fade-right') De acuerdo a la información anterior, a continuación, se explican los elementos básicos del modelo relacional, el cual es el más determinante en este proceso, como ya se había mencionado:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="fade-right")
         TabsA.color-acento-botones.mb-5
-          .tarjeta.p-4(titulo="Relacion" style="background-color: #fff4da")
+          .tarjeta.p-4(titulo="Relación" style="background-color: #fff4da")
             h4 Es la estructura básica del modelo relacional, está representado por medio de una tabla.
             p Una relación está compuesta por:
 
@@ -164,17 +168,20 @@
             h4 Es la ocurrencia de una relación, está representada por medio de una fila.
       .col-lg-4(data-aos="fade-left")
         img(src='@/assets/curso/temas/tema2/8.svg', alt='')
-    p.mb-5(data-aos='fade-right') #[b Elementos que conforman una tabla]
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h3.mb-0  Elementos que conforman una tabla
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
-      i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Tablas
+      i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
+      h5.mb-0 Tablas
     p.mb-5(data-aos='fade-right') Los datos de una base se guardan en una o varias tablas, según como están relacionados. Las tablas están compuestas por filas y columnas, en las columnas se definen los datos que se requieren almacenar especificando el tipo de dato y, en la fila quedarán los llamados registros (datos).
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         img(src='@/assets/curso/temas/tema2/9.svg', alt='')
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
-      i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Tipos de datos
+      i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
+      h5.mb-0 Tipos de datos
     p.mb-5(data-aos='fade-right') Las bases de datos están compuestas por tablas y estas, a su vez, contienen filas y columnas. Al momento de la creación de la columna hay que especificar, qué tipo de dato va a contener, para cuando se realice la agregación de los datos.
       br
       br
@@ -200,14 +207,14 @@
             | #[b TEXT:] para especificar los datos tipo texto.
           li
             i.fas.fa-check
-            | #[b BOOLEAN:] para almacenar si es falso o verdadero.
+            | #[b BOOLEAN:]  para almacenar si es falso o verdadero.
     p.mb-5(data-aos='fade-right') A continuación, una breve tabla con los tipos de datos más utilizados en las bases de datos:
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 2.
+          h5 Tabla 1
           br
-          span Los elementos de una tabla
+          span.fst-italic Tipos de datos
         .tabla-a.color-acento-contenido.mb-5
           table
             thead
@@ -263,10 +270,7 @@
               |#[b Ejemplo:] si se tiene una tabla “usuario” la llave primaria que identificaría a cada registro de forma única sería el campo código de usuario.
           .col-md-8
             .tarjeta.bg-white.p-5
-              .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-                h5 Tabla 3.
-                br
-                span Llave primaria 
+              h4 Llave primaria
               img(src='@/assets/curso/temas/tema2/11.svg', alt='')
         .row
           .col-md-4.mb-4.mb-md-0
@@ -280,16 +284,23 @@
 
           .col-md-8
             .tarjeta.bg-white.p-5
-              .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-                h5 Tabla 4.
-                span Llaves foráneas
+              h4 Llaves foráneas
               img(src='@/assets/curso/temas/tema2/12.svg', alt='')
     Separador
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.3 Etapas del diseño, modelo entidad relación
     p(data-aos="fade-right") Para empezar a entender el modelo entidad–relación, se deben revisar primero los conceptos básicos, qué es un modelo, cuáles modelos existen y demás temas pertinentes.
-    h4(data-aos="fade-right") Modelos de Datos
-    p(data-aos="fade-right") Cuando se habla de modelo de daos se refiere a una colección de heramientas utilizadas para la descripciónde los datos, las formas como se relacionan y la semántica asociada a ellos, además de sus restricciones de consistencia. 
+    ul.lista-ul--color
+      li
+        i.fas.fa-square
+        h4.mb-0 Modelos de Datos
+    .row.justify-content-center.mb-5
+      .col-lg-7(data-aos="fade-left")
+        .cajon.color-acento-contenido.p-4.mb-4(style="background-color:#fff4da ")
+          p.mb-0 Se refiere a una colección de herramientas utilizadas para la descripción de los datos, las formas como se relacionan y la semántica asociada a ellos, además de sus restricciones de consistencia.
+        p Un modelo de datos puede representar la organización conceptual o lógica de los datos que van a soportar todas las operaciones que se ejecutan en un determinado sistema o negocio. Dicho modelo es el encargado de dar una representación gráfica del mundo real al que se asocia, mostrando así, los elementos que lo componen. Para responder al avance rápido de la tecnología, los modelos de datos también han evolucionado y se han clasificado en tres grupos:
+      .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c1.png', alt='')
+        
     //- .row.justify-content-center.mb-5
     //-   .col-lg-7(data-aos="fade-right")
     //-     .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #fff4da ")
@@ -314,18 +325,14 @@
             span 3
           | Modelos físicos de datos
     div(style="background-color: #fff4da; border-left: 20px solid #ffb30b" data-aos="zoom-in").p-5.mb-5
-      h4 Modelos de Datos
-      p Cuando se habla de modelo de datos se refiere a una colección de herramientas utilizadas para la descripción de los datos, las formas como se relacionan y la semántica asociada a ellos, además de sus restricciones de consistencia.
+      p El #[b MER] (como se denominará en adelante al modelo entidad – relación), fue un modelo introducido originalmente por Peter Chen un estudioso de las ciencias de la computación en el año 1976 a través de su artículo modelo ER, el cual ha sido nombrado en todas las investigaciones y avances de análisis y diseño de sistemas.
         br
         br
-        |El MER (como se denominará al modelo entidad – relación en adelante), fue un modelo introducido originalmente por Peter Chen un estudioso de las ciencias de la computación en el año 1976 a través de su artículo modelo ER, el cual ha sido nombrado en todas las investigaciones y avances de análisis y diseño de sistemas.
-        br
-        br
-        |La base del MER está en identificar los elementos o entes importantes del sistema, los datos que componen cada una de estas entidades y cómo sería la relación o interacción entre entidades.
+        | La base del MER está en identificar los elementos o entes importantes del sistema, los datos que componen cada una de estas entidades y cómo sería la relación o interacción entre entidades.
     .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-      h5 Tabla 5. 
+      h5 Tabla 2 
       br
-      span Modelo de datos
+      span.fst-italic Modelo de datos
     .tabla-a.color-acento-contenido.mb-5.text-center
       table
         thead
@@ -424,7 +431,7 @@
           tr
             td 229
             td Laura Parra
-    p.mb-5(data-aos='fade-right') La construcción del MER se puede expresar en cuatro pasos que son:
+    p.mb-5(data-aos='fade-right') La construcción del MER, siglas que representan; Modelo, Entidad y Relación, puede ser expresada mediante cuatro pasos que son:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         img(src='@/assets/curso/temas/tema2/15.svg', alt='')
@@ -442,14 +449,10 @@
             br
             |Todos esos atributos forman parte de la entidad "Cliente”, pero no son relevantes para el negocio y, por ende, no se deben diseñar, ni plasmar en ninguna parte del modelo de datos. Es importante tener definido a qué tipo de dato pertenece el atributo y si su valor es obligatorio u opcional. Para cada una de estas características de los atributos, existe una manera grafica de representarlo, de acuerdo con la notación utilizada en el modelo.
           p.text-small(numero="4" titulo="Depurar el modelo") Al tener definido un modelo inicial, se deben revisar las características y operaciones de una entidad, desde la perspectiva de sus datos.
-    .bloque-derecha.mb-5(data-aos="zoom-in")
-      .bloque-texto-g.color-acento-botones.p-3.p-sm-4.p-md-5
-        .bloque-texto-g__img.d-flex.align-items-center( style="background-color: #f6f6f6").p-4
-          img(src='@/assets/curso/temas/tema2/17.svg', alt='' style='width: 427px').m-auto
-        .bloque-texto-g__texto--border.p-2.d-inline-block
-          .bloque-texto-g__texto.p-4
-            p.mb-5 Por tanto, se debe evaluar:
-            ul.lista-ul--color
+    p.mb-5(data-aos='fade-right') Por tanto, se debe evaluar: 
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        ul.lista-ul--color
               li
                 i.fas.fa-check
                 p.mb-0 #[b Unicidad de ocurrencias:] no deben existir dos filas o registros con la misma información.
@@ -462,6 +465,8 @@
               li
                 i.fas.fa-check
                 p.mb-0 #[b Exclusividad de ocurrencias y de atributos:] las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
+
+      .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c2.png', alt='')      
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.4 Normalización 
@@ -510,22 +515,25 @@
           |#[b 2.] Eliminar todas las relaciones en la que los datos no dependan completamente de la llave primaria del registro. 
           br
           |#[b 3.] Eliminar todas las relaciones que contengan dependencias transitivas.
-    .border-dash.p-5.mb-5
-      .row.justify-content-center
-        .col-lg-7(data-aos="fade-right")
-          p #[b La normalización es un proceso de varias, formas normales], con una totalidad de cinco, para un buen diseño de base de datos es indispensable cumplir con las condiciones de las tres primeras formas normales.
-            br
-            |La teoría de normalización tiene como fundamento el concepto de formas normales; se dice que una relación está en una determinada forma normal si satisface un conjunto de restricciones.
-            br
-            br
-            |#[b Basado en lo anterior y como ejemplo], la siguiente figura muestra un reporte de venta de la empresa Opus, la empresa no ha realizado el proceso de requerimientos, pero necesita una base de datos para su proceso de venta y envía este reporte, donde se evidencia toda la información que domina este proceso de negocio, la cual se debe almacenar en una base de datos:
-        .col-lg-5.col-8(data-aos="fade-left"): img(src='@/assets/curso/temas/tema2/21.png', alt='')
+    .row.justify-content-center.mb-5
+      .col-lg-10 
+        .bloque-derecha
+          .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
+            .bloque-texto-g__img(
+              :style="{'background-image':`url(${require('@/assets/curso/temas/tema2/c3.jpg')})`}"
+            )
+            .bloque-texto-g__texto.p-4
+              p.mb-0 La normalización es un proceso de varias formas normales, con una totalidad de cinco, para un buen diseño de base de datos es indispensable cumplir con las condiciones de las tres primeras formas normales.
+                br
+                br
+                |La teoría de normalización tiene como fundamento el concepto de formas normales; se dice que una relación está en una determinada forma normal si satisface un conjunto de restricciones.
+    p.mb-5(data-aos='fade-right') Basado en lo anterior y como ejemplo, la siguiente figura muestra un reporte de venta de la empresa Opus, la empresa no ha realizado el proceso de requerimientos, pero necesita una base de datos para su proceso de venta y envía este reporte, donde se evidencia toda la información que domina este proceso de negocio, la cual se debe almacenar en una base de datos:
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 6.
+          h5 Tabla 3
           br
-          span Reporte de ventas
+          span.fst-italic Reporte de ventas
         .tabla-a.color-acento-contenido.mb-5.text-center
           table
             thead
@@ -534,7 +542,7 @@
                 th Nombre #[br] Vendedor
                 th Cédula #[br] Cliente
                 th Nombre #[br] Cliente
-                th Códgo #[br] Almacen
+                th Código #[br] Almacen
                 th Ubicación #[br] Almacén
                 th Valor de #[br] Venta
             tbody
@@ -550,7 +558,7 @@
                   br
                   |Leidy Díaz
                   br
-                  |Carlos Baron
+                  |Carlos Barón
                 td 6
                   br
                   |3
@@ -574,7 +582,7 @@
                   |13457859
                   br
                   |1001254789
-                td Silvia Garcia
+                td Silvia García
                   br
                   |Luis Pardo
                   br
@@ -584,9 +592,9 @@
                   |2
                   br
                   |1
-                td Medellin
+                td Medellín
                   br
-                  |Medellin
+                  |Medellín
                   br
                   |Bucaramanga
                 td 356800
@@ -609,7 +617,7 @@
               .row.justify-content-between.align-items-center
                 .col-10.mb-3.mb-sm-0.text-white
                   h3.mb-1 Anexo
-                  p.text-small A través del siguiente documento se pueden conocer las cinco formas normales:
+                  p.text-small Como se ha indicado, las formas normales son aplicadas a las tablas de una base de datos. Decir que una base de datos está en la forma normal N es decir que todas sus tablas están en la forma normal N; se ha dejado a disposición, un documento que permite conocer las cinco formas normales, el cual puede descargar a continuación:
                 .col.mb-3.mb-sm-0
                   a.boton.color-acento-botones(:href="obtenerLink('downloads/doc2.pdf')" target="_blank" type="application/pdf")
                     span(style='color: #12263f') Descargar 
