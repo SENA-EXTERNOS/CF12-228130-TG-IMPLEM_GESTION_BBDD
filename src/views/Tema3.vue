@@ -36,7 +36,7 @@
               br
               |Ejemplo de entidades: profesores, empleados, estudiantes, clientes, proveedores, etc. Cada una con ciertas características que describen y diferencian cada elemento.
           div(titulo="Relaciones")
-            p Las relaciones son las asociaciones que se describen entre dos atributos (campos) de dos tablas para compartir información (Aragón, y otros2018), esas respectivas relaciones entre las entidades, se representan por medio de un rombo describiendo en el interior la acción de la relación.
+            p Las relaciones son las asociaciones que se describen entre dos atributos (campos) de dos tablas para compartir información (Aragón, y otros 2018), esas respectivas relaciones entre las entidades, se representan por medio de un rombo describiendo en el interior la acción de la relación.
           div(titulo="Atributos")
             p Una entidad está representada por un grupo de atributos. Estos son los encargados de describir una entidad específica, teniendo en cuenta cada una de sus características o propiedades, se representa por medio de una elipse o un círculo con su nombre correspondiente en el interior. Por ejemplo, la entidad “vehículo” se puede describir con los atributos: marca, modelo, color, placa, número, pasajeros, etc.
           div(titulo="Cardinalidad")
@@ -88,7 +88,7 @@
     p.mb-5(data-aos='fade-right')  En la siguiente imagen se puede observar un ejemplo  de modelo de Entidad - Relación (E/R): 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
-        img(src='@/assets/curso/temas/tema3/8.svg' alt='AvatarTop') 
+        img(src='@/assets/curso/temas/tema3/14.svg' alt='AvatarTop') 
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Listado de herramientas para modelado de bases de datos
@@ -123,7 +123,7 @@
             figure
               img(src='@/assets/curso/temas/tema3/11.png', alt='Texto que describa la imagen')
         h2.text-center StarUML
-        p.text-center Es una herramienta para modelado de diagramas bajo el estándar de UML, es multiplataforma, un software muy versátil que permite un modelo ágil. La página oficial es https://app.diagrams.net/
+        p.text-center Es una herramienta para modelado de diagramas bajo el estándar de UML, es multiplataforma, un <em>software</em> muy versátil que permite un modelo ágil. La página oficial es https://app.diagrams.net/
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
@@ -141,7 +141,8 @@
       .col-lg-10(data-aos="zoom-in")
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris2" )
           div(titulo="Diccionario de datos")
-            p Es un conjunto de descripciones que comprende las características lógicas y puntuales de los datos que se van a implementar en el sistema, incluyendo nombre, contenido, alias y organización. Este identifica plenamente donde se implementan los datos y los sitios dónde se requiere el acceso de forma eficiente, se construye durante el análisis del flujo de datos y, sirve de apoyo a los diferentes analistas que participan en los requerimientos del sistema.
+            p Es un conjunto de descripciones que comprende las características lógicas y puntuales de los datos que se van a implementar en el sistema, incluyendo nombre, contenido, alias y organización. Este identifica plenamente dónde se implementan los datos y los sitios donde se requiere el acceso de forma eficiente, se construye durante el análisis del flujo de datos y, sirve de apoyo a los diferentes analistas que participan en los requerimientos del sistema.
+
               br
               br
               |En un diccionario de datos se encuentra alojado cada uno de los elementos que forman parte del flujo de los datos del sistema. Además, almacena cada detalle y descripción de los diferentes datos implementados.
@@ -177,32 +178,32 @@
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | #[b Nombre:] para diferenciar un dato del otro.
+            p.mb-0 #[b Nombre:] para diferenciar un dato del otro.
           li
             i.fas.fa-check
-            | #[b Descripción:] conceptualiza lo que representa en el sistema.
+            p.mb-0 #[b Descripción:] conceptualiza lo que representa en el sistema.
           li
             i.fas.fa-check
-            | #[b Alias:] porque un dato por lo general puede recibir varios nombres
+            p.mb-0 #[b Alias:] porque un dato por lo general puede recibir varios nombres
           li
             i.fas.fa-check
-            | #[b Longitud:] es vital conocer la cantidad de espacio necesario para el dato.
+            p.mb-0 #[b Longitud:] es vital conocer la cantidad de espacio necesario para el dato.
           li
             i.fas.fa-check
-            | #[b Valores de los datos:] para saber qué tipo de dato se requiere para el dato.
+            p.mb-0 #[b Valores de los datos:] para saber qué tipo de dato se requiere para el dato.
           li
             i.fas.fa-check
-            | #[b Estructura de los datos:] es un grupo de datos que están relacionados con otros y que en conjunto describen un componente del sistema.
+            p.mb-0 #[b Estructura de los datos:] es un grupo de datos que están relacionados con otros y que en conjunto describen un componente del sistema.
     p Ejemplo de diccionario de datos:
     .row.justify-content-center.mb-5
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 4
+          h5 Tabla 4
           br
           span.fst-italic Ejemplo de diccionario de datos
         .tabla-a.color-acento-contenido.mb-5
           table
-            caption #[b Nota:] tomado de: Ingeniería de software (s/f). Diccionario de datos de un software. https://ingsoftware.weebly.com/diccionario-de-datos-de-un-software.html
+            caption #[b Nota:] tomado de: Ingeniería de <em>software</em> (s/f). Diccionario de datos de un <em>software</em>. https://ingsoftware.weebly.com/diccionario-de-datos-de-un-software.html
             thead
               tr
                 th(colspan='2') Nombre de Archivo: BDPlantilla

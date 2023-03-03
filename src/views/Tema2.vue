@@ -107,7 +107,7 @@
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 2
+          h5 Figura 1
           br
           span.fst-italic Conceptos modelo relacional
         img(src='@/assets/curso/temas/tema2/7.svg', alt='')
@@ -192,22 +192,22 @@
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | #[b NULL:] que significa valor vacío o nulo.
+            p.mb-0 #[b NULL:] que significa valor vacío o nulo.
           li
             i.fas.fa-check
-            | #[b INTEGER:] para almacenar números enteros (1, 2, 3,-1,-5, etc.).
+            p.mb-0 #[b INTEGER:] para almacenar números enteros (1, 2, 3,-1,-5, etc.).
           li
             i.fas.fa-check
-            | #[b REAL:] para almacenar valores reales o flotantes (números decimales).
+            p.mb-0 #[b REAL:] para almacenar valores reales o flotantes (números decimales).
           li
             i.fas.fa-check
-            | #[b DATE:] para fechas.
+            p.mb-0 #[b DATE:] para fechas.
           li
             i.fas.fa-check
-            | #[b TEXT:] para especificar los datos tipo texto.
+            p.mb-0 #[b TEXT:] para especificar los datos tipo texto.
           li
             i.fas.fa-check
-            | #[b BOOLEAN:]  para almacenar si es falso o verdadero.
+            p.mb-0 #[b BOOLEAN:]  para almacenar si es falso o verdadero.
     p.mb-5(data-aos='fade-right') A continuación, una breve tabla con los tipos de datos más utilizados en las bases de datos:
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-8(data-aos="zoom-in")
@@ -293,7 +293,7 @@
     ul.lista-ul--color
       li
         i.fas.fa-square
-        h4.mb-0 Modelos de Datos
+        h4.mb-0 Modelos de datos
     .row.justify-content-center.mb-5
       .col-lg-7(data-aos="fade-left")
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color:#fff4da ")
@@ -466,7 +466,14 @@
                 i.fas.fa-check
                 p.mb-0 #[b Exclusividad de ocurrencias y de atributos:] las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
 
-      .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c2.png', alt='')      
+      .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c2.png', alt='') 
+    .row.justify-content-center
+      .col-lg-10
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 2
+          br
+          span.fst-italic Ejemplo de modelo Entidad - Relación        
+    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema2/26.svg', alt='')            
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.4 Normalización 
@@ -542,7 +549,7 @@
                 th Nombre #[br] Vendedor
                 th Cédula #[br] Cliente
                 th Nombre #[br] Cliente
-                th Código #[br] Almacen
+                th Código #[br] Almacén
                 th Ubicación #[br] Almacén
                 th Valor de #[br] Venta
             tbody

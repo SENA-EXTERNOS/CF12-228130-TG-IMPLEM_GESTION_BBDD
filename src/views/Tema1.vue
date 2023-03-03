@@ -54,7 +54,7 @@
             p A mediados de la época de los años 50, se dio origen a las famosas cintas magnéticas; su función primordial era la automatización de la información y crear sus respectivos respaldos. Esto surgió para suplir la necesidad de las grandes industrias.
               br
               br
-              |Esta innovación fue posible gracias a que años anteriores, especialmente por 1884, se creó una máquina que, además de ser automática, utilizaba tarjetas perforadas, su creador fue Herman Hollerith quien fue nombrado el primer ingeniero estadístico de la historia. Esta máquina contribuyó al manejo de la información en los censos, que antes eran manuales.
+              |Gracias a esta innovación, en 1984 se creó una máquina que, además de ser automática, utilizaba tarjetas perforadas, su creador fue Herman Hollerith quien fue nombrado el primer ingeniero estadístico de la historia. Esta máquina contribuyó al manejo de la información en los censos, que antes eran manuales.
           .col-md-4
             figure
               img(src='@/assets/curso/temas/tema1/3.jpg', alt='' style='border-radius: 20px')
@@ -204,10 +204,6 @@
     p.mb-5(data-aos='fade-right')  A continuación, se observa la relación entre los diferentes esquemas:
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 1
-          br
-          span.fst-italic Arquitectura de los sistemas de bases de datos 
         img(src='@/assets/curso/temas/tema1/21.svg', alt='')
     Separador
     ul.lista-ul--color
@@ -216,7 +212,7 @@
         h3.mb-0 Tipos de BD (relacional - no relacional)
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
-      h5.mb-0 Bases de datos Relacional
+      h5.mb-0 Bases de datos relacional
     .bloque-derecha.mb-5(data-aos="zoom-in")
       .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
         .bloque-texto-g__img.d-flex.align-items-center( style="background-color: #FEE3A8").p-4
@@ -233,14 +229,14 @@
           p.mb-0 Las bases de datos relacionales tienen como objetivo organizar la información en partes pequeñas, que se relacionan mediante identificadores. Además, son bases de datos más robustas, tienen una gran capacidad de almacenamiento, contienen menos vulnerabilidad ante posibles fallas; todas estas son unas de sus principales características.
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
-      h5.mb-0 Bases de datos No Relacional
+      h5.mb-0 Bases de datos no relacional
     .row.justify-content-center.mb-5
       .col-lg-3.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema1/24.svg', alt='')
       .col-lg-9(data-aos="fade-left")
         div(style="background-color: #00defc").p-3
           .border-dash.p-2
             .bg-white.p-4
-              p.mb-0 Las bases de datos no relacionales son ideales para construir aplicaciones modernas, gracias a que está conformada por esquemas flexibles y diseñadas específicamente para modelos de datos especiales. Son reconocidas en el desarrollo de software, al ser de fácil construcción y manejo, permiten una gran escalabilidad y funcionalidad en el rendimiento. Estas bases de datos utilizan una gran variedad de modelos de datos conformados por: documentos, clave – valor, grafos, en-memoria y búsqueda.
+              p.mb-0 Las bases de datos no relacionales son ideales para construir aplicaciones modernas, gracias a que está conformada por esquemas flexibles y diseñadas específicamente para modelos de datos especiales. Son reconocidas en el desarrollo de #[i software], al ser de fácil construcción y manejo, permiten una gran escalabilidad y funcionalidad en el rendimiento. Estas bases de datos utilizan una gran variedad de modelos de datos conformados por: documentos, clave – valor, grafos, en-memoria y búsqueda.
                 br
                 br
                 |Las bases de datos no relacionales son también llamadas bases de datos NoSQL, no disponen de un identificador que sirve para relacionar entre un conjunto de datos y otro. La información se organiza generalmente mediante documentos, es una base de datos muy práctica cuando no se tiene claridad en el esquema de datos que se va a implementar.     
@@ -357,16 +353,12 @@
             p.mb-0 #[b No son transaccionales.]
     .row.justify-content-center.mb-5
       .col-lg-10
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 1
-          br
-          span.fst-italic Uso SQL y de NOSQL
-        .dots-editados
+        .dots-editados.mt-5
           ImagenInfografica.color-acento-botones.mb-5
             template(v-slot:imagen)
               figure
                 img(src='@/assets/curso/temas/tema1/26.svg', alt='Texto que describa la imagen')
-            .tarjeta.color-acento-contenido.p-3(x="14%" y="70%" numero="+")
+            .tarjeta.color-acento-contenido.p-3(x="13.8%" y="68.9%" numero="+")
               .bg-white.p-2
                 .h5.mb-2.text-center SQL
                 p Cuando el volumen de los datos no crece o crece moderadamente.
@@ -376,7 +368,7 @@
                   br
                   |Cuando no tenemos picos de uso del sistema por parte de los usuarios finales.
 
-            .tarjeta.color-primario.p-3(x="84%" y="70%" numero="+")
+            .tarjeta.color-primario.p-3(x="83.6%" y="69%" numero="+")
               .h5.mb-2.text-center NoSQL 
               p Cuando el volumen de los datos crece rápidamente en momentos puntuales.
                 br

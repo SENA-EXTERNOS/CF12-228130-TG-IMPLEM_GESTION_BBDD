@@ -157,7 +157,7 @@ export default {
     {
       termino: 'Base de datos',
       significado:
-        'conjunto de datos con unas propiedades específicas, no redundancia e integridad y que forman la estructura de información que va a ser consultada y accedida por los usuarios finales',
+        'conjunto de datos con unas propiedades específicas, no redundancia e integridad y que forman la estructura de información que va a ser consultada y accedida por los usuarios finales.',
     },
     {
       termino: 'Claves',
@@ -170,7 +170,7 @@ export default {
         'es la parte más pequeña de información de un proceso, que por sí solo no dice nada, o no da un conocimiento.',
     },
     {
-      termino: 'Integridad de Datos',
+      termino: 'Integridad de datos',
       significado:
         'grado hasta el cual son exactos los datos en cualquier archivo individual.',
     },
@@ -202,57 +202,54 @@ export default {
   referencias: [
     {
       referencia:
-        'Aragón Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. Revista Cubana de Ciencias Informáticas.',
-      link:
-        'http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S2227-18992018000300012',
-    },
-    {
-      referencia: 'Ciencias Informáticas.',
+        'Aragón Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. <i>Revista Cubana de Ciencias Informáticas</i>.',
       link:
         'http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S2227-18992018000300012',
     },
     {
       referencia:
-        'Beynon-Davies, P. (2018). Sistemas de bases de datos. Editorial Reverté. ',
+        'Beynon-Davies, P. (2018). <i>Sistemas de bases de datos</i>. Editorial Reverté.',
       link:
         'https://books.google.es/books?hl=es&lr=&id=XjbeDwAAQBAJ&oi=fnd&pg=PR5&dq=bases+de+datos&ots=DIBXDRJPGU&sig=8sk6MPk4qc9zwSgjd7tiiFQFw94#v=onepage&q=bases%20de%20datos&f=false',
     },
     {
       referencia:
-        'Capacho, J., & Nieto, W. (2017). Diseño de bases de datos. Universidad del Norte.',
+        'Capacho, J., & Nieto, W. (2017). <i>Diseño de bases de datos</i>. Universidad del Norte.',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1i756fj/TN_cdi_jstor_books_j_ctt2050w3s_7',
     },
     {
       referencia:
-        'Gómez, Y. (2018). Estudio de seguridad en bases de datos SQL y NOSQL. Universidad Nacional Abierta y a Distancia.',
-      link: 'https://repository.unad.edu.co/handle/10596/21429',
+        'Gómez, Y. (2018). <i>Estudio de seguridad en bases de datos SQL y NOSQL</i>. Universidad Nacional Abierta y a Distancia.',
+      link:
+        'https://repository.unad.edu.co/bitstream/handle/10596/21429/52488191.pdf?sequence=4&isAllowed=y',
     },
     {
       referencia:
-        'González, J. (2022). Utilización de las bases de datos relacionales en el sistema de gestión y almacenamiento de datos. Editorial Paraninfo.',
+        'González, J. (2022). <i>Utilización de las bases de datos relacionales en el sistema de gestión y almacenamiento de datos</i>. Editorial Paraninfo.',
       link:
         'https://books.google.es/books?hl=es&lr=&id=hPV2EAAAQBAJ&oi=fnd&pg=PR7&dq=bases+de+datos&ots=ZtVZ5cCbw2&sig=OlE5gCoqw-tpL5RKdAPOpNQ7d0o#v=onepage&q=bases%20de%20datos&f=false',
     },
     {
-      referencia: 'Marqués, M. (2010). Base de Datos. De Universitat Jaume I.',
+      referencia:
+        'Marqués, M. (2010). <i>Base de Datos</i>. De Universitat Jaume I.',
       link:
         'https://bdigital.uvhm.edu.mx/wp-content/uploads/2020/05/Bases-de-Datos.pdf',
     },
     {
       referencia:
-        'Mendoza, A., & López, R. (2018). Bases de datos. Universidad de chile.',
+        'Mendoza, A., & López, R. (2018). <i>Bases de datos</i>. Universidad de chile.',
       link: 'https://repositorio.uchile.cl/handle/2250/151632',
     },
     {
       referencia:
-        'Millán, M. (2017). Fundamentos de bases de datos. Universidad del Valle. Programa Editorial.',
+        'Millán, M. (2017). <i>Fundamentos de bases de datos</i>. Universidad del Valle. Programa Editorial.',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_elibroELB129060',
     },
     {
       referencia:
-        'Muñoz, R., Maldonado, C., Damiano, L., Romero, M., Bueno, M., Quinteros, S. & Arguello, S. (2018). Buenas prácticas en el diseño de estructuras de datos en bases de datos relacionales. Red de Universidades con Carreras en Informática.',
+        'Muñoz, R., Maldonado, C., Damiano, L., Romero, M., Bueno, M., Quinteros, S. & Arguello, S. (2018). <i>Buenas prácticas en el diseño de estructuras de datos en bases de datos relacionales</i>. Red de Universidades con Carreras en Informática.',
       link: 'http://sedici.unlp.edu.ar/handle/10915/67409',
     },
   ],
