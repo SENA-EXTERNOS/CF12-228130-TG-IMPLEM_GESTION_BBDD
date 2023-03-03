@@ -92,7 +92,9 @@
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Listado de herramientas para modelado de bases de datos
-    p.mb-5(data-aos='fade-right') En la actualidad existe una gran variedad de herramientas que son muy útiles al momento de realizar el respectivo modelado de la base de datos. Las herramientas también dependen mucho de la capacidad de <em>hardware<\em> del equipo donde se desean instalar. También se pueden utilizar herramientas que funcionan perfectamente por medio de un navegador web, permitiendo una gran eficiencia y disponibilidad, al momento de la recuperación de la información.
+    p.mb-5(data-aos='fade-right') En la actualidad existe una gran variedad de herramientas que son muy útiles al momento de realizar el respectivo modelado de la base de datos. Las herramientas también dependen mucho de la capacidad de 
+      em hardware 
+      | del equipo donde se desean instalar. También se pueden utilizar herramientas que funcionan perfectamente por medio de un navegador web, permitiendo una gran eficiencia y disponibilidad, al momento de la recuperación de la información.
       br
       br
       |Herramientas en la nube: 
