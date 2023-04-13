@@ -104,15 +104,15 @@
             p Las industrias que dominan el mercado en sistemas de gestores de bases de datos son:
               br
               br
-              |•	IBM
+              |•	#[i IBM]
               br
-              |•	Microsoft
+              |•	#[i Microsoft]
               br
-              |•	Oracle
+              |•	#[i Oracle]
               br
               br
 
-              |Estas son bases de datos con el lenguaje SQL, pero están surgiendo las bases de datos NoSQL (bases de datos no relacionales), que, gracias al manejo de un gran volumen de información con un flujo constante, como lo son las redes sociales, dio pie a grandes industrias que implementaron este tipo de bases de datos, como son: Facebook y Twitter, etc.  Algunas de estas bases de datos NoSQL son: Cassandra, MongoDB, HBase, etc.
+              |Estas son bases de datos con el lenguaje #[i SQL], pero están surgiendo las bases de datos #[i NoSQL] (bases de datos no relacionales), que, gracias al manejo de un gran volumen de información con un flujo constante, como lo son las redes sociales, dio pie a grandes industrias que implementaron este tipo de bases de datos, como son: #[i Facebook] y #[i Twitter], etc.  Algunas de estas bases de datos #[i NoSQL] son: #[i Cassandra], #[i MongoDB], #[i HBase], etc.
 
           .col-md-4
             figure

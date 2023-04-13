@@ -46,10 +46,10 @@
             ul.lista-ul--color
               li
                 i.fas.fa-angle-right
-                p.mb-0 #[b La clave primaria], en la entidad la clave primaria es aquel atributo que es único para cada registro, se representa por medio de una línea continua de forma subrayado en el nombre del atributo correspondiente. 
+                p.mb-0 #[b La clave primaria]: en la entidad la clave primaria es aquel atributo que es único para cada registro, se representa por medio de una línea continua de forma subrayado en el nombre del atributo correspondiente. 
               li
                 i.fas.fa-angle-right
-                p.mb-0 #[b La clave foránea], estas claves son las encargadas de demostrar la respectiva relación que se tiene en dos entidades, se representa por una línea subrayada de forma punteada debajo del nombre del atributo candidato de la relación.
+                p.mb-0 #[b La clave foránea]: estas claves son las encargadas de demostrar la respectiva relación que se tiene en dos entidades, se representa por una línea subrayada de forma punteada debajo del nombre del atributo candidato de la relación.
     p.mb-5(data-aos='fade-right')  En la siguiente representación gráfica se observan las figuras y lo que cada una representa:
     SlyderF.slyder-100.mb-5(columnas="col-lg-6 col-xl-4")
       .tarjeta.p-4(style='background-color: #afcee9').h-100
@@ -105,18 +105,24 @@
             figure
               img(src='@/assets/curso/temas/tema3/9.png', alt='Texto que describa la imagen')
         h2.text-center Lucidchart
-        p.text-center Es una herramienta creada para construir y diagramar en red, trabaja en el equipo en tiempo real, es muy versátil y colaborativa. La página oficial de la herramienta es: https://www.lucidchart.com/
+        p.mb-0.text-center Es una herramienta creada para construir y diagramar en red, trabaja en el equipo en tiempo real, es muy versátil y colaborativa. La página oficial de la herramienta es:
+        a(href="https://www.lucidchart.com/" target="_blank")
+          p.text-center.mt-0 https://www.lucidchart.com/
+      
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema3/10.png', alt='Texto que describa la imagen')
         h2.text-center Draw.io
-        p.text-center Es una herramienta opensource creada para construir diagramas en la red, facilita la integración con múltiples plataformas y programas. Su funcionamiento es por medio de un navegador web, de fácil funcionamiento y es muy intuitiva, creada por Google. La página oficial es: https://app.diagrams.net/
+        p.mb-0.text-center Es una herramienta opensource creada para construir diagramas en la red, facilita la integración con múltiples plataformas y programas. Su funcionamiento es por medio de un navegador web, de fácil funcionamiento y es muy intuitiva, creada por Google. La página oficial es:
+        a(href="https://app.diagrams.net/" target="_blank")
+          p.text-center.mt-0 https://app.diagrams.net/
+    
     p.mb-5(data-aos='fade-right') Es importante visualizar el siguiente video, en donde se explica la construcción Modelo Entidad / Relación por medio de la herramienta Draw.io:
     figure.mb-5
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/lKrxY_VCstc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/E9mCcQXpfb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     h4 Herramientas locales (PC):
     .tarjeta--container.row.mb-5(data-aos="zoom-in")
       .col-md.tarjeta.color-secundario.p-5
@@ -125,15 +131,19 @@
             figure
               img(src='@/assets/curso/temas/tema3/11.png', alt='Texto que describa la imagen')
         h2.text-center StarUML
-        p.text-center Es una herramienta para modelado de diagramas bajo el estándar de UML, es multiplataforma, un <em>software</em> muy versátil que permite un modelo ágil. La página oficial es https://app.diagrams.net/
+        p.mb-0.text-center Es una herramienta para modelado de diagramas bajo el estándar de UML, es multiplataforma, un #[i software] muy versátil que permite un modelo ágil. La página oficial es
+        a(href="https://app.diagrams.net/" target="_blank")
+          p.text-center.mt-0 https://app.diagrams.net/      
+      
       .col-md.tarjeta.color-primario.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/temas/tema3/12.png', alt='Texto que describa la imagen')
         h2.text-center WhiteStarUML
-        p.text-center Es una herramienta de código abierto creado para la plataforma Windows diseñada especialmente para construir diagramas UML. La página oficial del sitio para su descarga es https://sourceforge.net/projects/whitestaruml/
-
+        p.mb-0.text-center Es una herramienta de código abierto creado para la plataforma Windows diseñada especialmente para construir diagramas UML. La página oficial del sitio para su descarga es
+        a(href="https://sourceforge.net/projects/whitestaruml/" target="_blank")
+          p.text-center.mt-0 https://sourceforge.net/projects/whitestaruml/  
 
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0

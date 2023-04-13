@@ -210,7 +210,7 @@
             p.mb-0 #[b BOOLEAN:]  para almacenar si es falso o verdadero.
     p.mb-5(data-aos='fade-right') A continuación, una breve tabla con los tipos de datos más utilizados en las bases de datos:
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-8(data-aos="zoom-in")
+      .col-lg-9(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Tabla 1
           br
