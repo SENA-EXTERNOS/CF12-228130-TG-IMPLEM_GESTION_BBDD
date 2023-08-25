@@ -16,7 +16,7 @@
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #ffecc1 ")
-          p.mb-0 En la actualidad la información operativa y estratégica de la que dispone una empresa, se encuentra estructurada en bases de datos. Teniendo en cuenta que estos sistemas de gestión manipulan, operan y administran cada uno de los datos e información valiosa de la organización, gran parte del presupuesto se invierte en BD, tanto en copias de seguridad, actualizaciones, mejoraras del rendimiento, accesibilidad, como en el cuidado de la calidad de los datos. Un objetivo crucial para el CEO de la compañía es garantizar la gestión en las bases de datos, ya que es primordial para ejecutar el rol de soporte de las diferentes infraestructuras y procesos que garantizan sus activos.
+          p.mb-0 En la actualidad, la información operativa y estratégica de la que dispone una empresa, se encuentra estructurada en bases de datos. Teniendo en cuenta que estos sistemas de gestión manipulan, operan y administran cada uno de los datos e información valiosa de la organización, gran parte del presupuesto se invierte en BD, tanto en copias de seguridad, actualizaciones, mejoraras del rendimiento, accesibilidad, como en el cuidado de la calidad de los datos. Un objetivo crucial para el CEO de la compañía es garantizar la gestión en las bases de datos, ya que es primordial para ejecutar el rol de soporte de las diferentes infraestructuras y procesos que garantizan sus activos.
     Separador
     ul.lista-ul--color
       li
@@ -30,7 +30,7 @@
               :style="{'background-image':`url(${require('@/assets/curso/temas/tema1/c1.jpg')})`}"
             )
             .bloque-texto-g__texto.p-4.w-60
-              p.mb-0 Como primera medida debe definirse el término “base de datos”, este es un conjunto de datos clasificados metódicamente y correlaciones entre ellos, con el propósito de lograr una eficiencia y valor de esos datos. #[b “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos”.] (Marqués, 2010)
+              p.mb-0 Como primera medida debe definirse el término “base de datos”, este es un conjunto de datos clasificados metódicamente y correlacionados entre ellos, con el propósito de lograr una eficiencia y valor de esos datos. #[b “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos”.] (Marqués, 2010)
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Origen bases de datos
@@ -328,7 +328,7 @@
             p.mb-0 #[b No generan cuellos de botella], el principal problema de los sistemas SQL, es que se requiere trascribir cada sentencia que se va a ejecutar, y cada sentencia al ser más compleja necesita de un nivel de ejecución aún más complejo, donde muchas peticiones pueden volver lento al sistema.
           li
             i.fas.fa-check(style='color: #084a93')
-            p.mb-0 Algunos tipos de almacén de bases de datos NoSQL #[b incluyen diferentes tipos de almacenes] como por ejemplo el almacén de columnas, de documentos, de #[em key-value store], de gráficos, de objetos, de XML y otros modos de almacén de datos.
+            p.mb-0 Algunos tipos de almacén de bases de datos NoSQL #[b incluyen diferentes tipos de almacenes,] como por ejemplo el almacén de columnas, de documentos, de #[em key-value store], de gráficos, de objetos, de XML y otros modos de almacén de datos.
           li
             i.fas.fa-check(style='color: #084a93')
             p.mb-0 Algunos tipos de almacén de bases de datos #[b NoSQL incluyen almacenes de columnas], de documentos, de valores de claves, de gráficos, de objetos, de XML y otros modos de almacén de datos.
@@ -361,30 +361,29 @@
             .tarjeta.color-acento-contenido.p-3(x="13.8%" y="68.9%" numero="+")
               .bg-white.p-2
                 .h5.mb-2.text-center SQL
-                p Cuando el volumen de los datos no crece o crece moderadamente.
-                  br
-                  |Cuando las necesidades del proceso se pueden realizar en un solo servidor.
-                  br
-                  br
-                  |Cuando no tenemos picos de uso del sistema por parte de los usuarios finales.
+                ul.lista-ul
+                  li
+                    i.fas.fa-angle-right
+                    | Cuando el volumen de los datos no crece o crece moderadamente.
+                  li
+                    i.fas.fa-angle-right
+                    | Cuando las necesidades del proceso se pueden realizar en un solo servidor.
+                  li
+                    i.fas.fa-angle-right
+                    | Cuando no tenemos picos de uso del sistema por parte de los usuarios finales.
 
             .tarjeta.color-primario.p-3(x="83.6%" y="69%" numero="+")
-              .h5.mb-2.text-center NoSQL 
-              p Cuando el volumen de los datos crece rápidamente en momentos puntuales.
-                br
-                |Cuando las necesidades del proceso no se pueden prever.
-                br
-                br
-                |Cuando tenemos picos en el uso del sistema por parte de los usuarios en múltiples ocasiones.
-
-
-
-
-
-
-
-
-
+              .h5.mb-2.text-center NoSQL
+              ul.lista-ul
+                li
+                  i.fas.fa-angle-right
+                  | Cuando el volumen de los datos crece rápidamente en momentos puntuales.
+                li
+                  i.fas.fa-angle-right
+                  | Cuando las necesidades del proceso no se pueden prever.
+                li
+                  i.fas.fa-angle-right
+                  | Cuando tenemos picos en el uso del sistema por parte de los usuarios en múltiples ocasiones.
 
 
 

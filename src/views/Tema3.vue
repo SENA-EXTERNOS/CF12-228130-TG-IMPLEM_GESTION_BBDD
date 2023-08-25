@@ -40,13 +40,13 @@
           div(titulo="Atributos")
             p Una entidad está representada por un grupo de atributos. Estos son los encargados de describir una entidad específica, teniendo en cuenta cada una de sus características o propiedades, se representa por medio de una elipse o un círculo con su nombre correspondiente en el interior. Por ejemplo, la entidad “vehículo” se puede describir con los atributos: marca, modelo, color, placa, número, pasajeros, etc.
           div(titulo="Cardinalidad")
-            p Esta cardinalidad dentro del modelo se representa en los extremos de cada relación. La cardinalidad expresa cuántas entidades de un extremo de la relación están relacionadas con cuántas entidades del otro extremo. Pueden ser “uno a uno”', “uno a varios”' o “varios a varios”. (Muñoz et al, 2018)
+            p Esta cardinalidad dentro del modelo se representa en los extremos de cada relación. La cardinalidad expresa cuántas entidades de un extremo de la relación están relacionadas con cuántas entidades del otro extremo. Pueden ser “uno a uno”, “uno a varios” o “varios a varios”. (Muñoz et al, 2018)
           div(titulo="Clave en una entidad")
             p Dentro del modelo entidad / relación están representadas las claves primarias y claves foráneas: 
             ul.lista-ul--color
               li
                 i.fas.fa-angle-right
-                p.mb-0 #[b La clave primaria]: en la entidad la clave primaria es aquel atributo que es único para cada registro, se representa por medio de una línea continua de forma subrayado en el nombre del atributo correspondiente. 
+                p.mb-0 #[b La clave primaria]: en la entidad la clave primaria es aquel atributo que es único para cada registro, se representa por medio de una línea continua de forma subrayada en el nombre del atributo correspondiente. 
               li
                 i.fas.fa-angle-right
                 p.mb-0 #[b La clave foránea]: estas claves son las encargadas de demostrar la respectiva relación que se tiene en dos entidades, se representa por una línea subrayada de forma punteada debajo del nombre del atributo candidato de la relación.
@@ -65,7 +65,7 @@
       .tarjeta.p-4(style='background-color: #afcee9').h-100
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/curso/temas/tema3/4.svg' alt='AvatarTop')
+            img(src='@/assets/curso/temas/tema3/c1.svg' alt='AvatarTop')
         h4.text-center Relaciones
       .tarjeta.p-4(style='background-color: #afcee9').h-100
         .row.justify-content-center.mb-3
@@ -77,18 +77,6 @@
           .col-8
             img(src='@/assets/curso/temas/tema3/6.svg' alt='AvatarTop')
         h4.text-center Llave primaria
-      .tarjeta.p-4(style='background-color: #afcee9').h-100
-        .row.justify-content-center.mb-3
-          .col-8
-            img(src='@/assets/curso/temas/tema3/7.svg' alt='AvatarTop')
-        h4.text-center Entidades
-    .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
-      i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Ejemplo de modelo entidad relación
-    p.mb-5(data-aos='fade-right')  En la siguiente imagen se puede observar un ejemplo  de modelo de Entidad - Relación (E/R): 
-    .row.justify-content-center.mb-5
-      .col-lg-10(data-aos="zoom-in")
-        img(src='@/assets/curso/temas/tema3/14.svg' alt='AvatarTop') 
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Listado de herramientas para modelado de bases de datos
@@ -218,7 +206,7 @@
             caption #[b Nota:] tomado de: Ingeniería de <em>software</em> (s/f). Diccionario de datos de un <em>software</em>. https://ingsoftware.weebly.com/diccionario-de-datos-de-un-software.html
             thead
               tr
-                th(colspan='2') Nombre de Archivo: BDPlantilla
+                th(colspan='2') Nombre de archivo: BDPlantilla
                 th(colspan='2') Fecha de creación: 27/04/2008.
               tr
                 th(colspan='4') Descripción: Base de datos que contendrá la plantilla de personal del instituto.

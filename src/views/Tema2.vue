@@ -12,7 +12,7 @@
           p.mb-0 Una base de datos bien diseñada permite de manera eficiente el acceso a la información actualizada y exacta.  Un correcto diseño es crucial para cumplir con los objetivos definidos en ella.
             br
             br
-            |El diseño de la base de datos es un proceso que se rige bajo ciertos principios bien estructurados, partiendo de una base para la obtención del modelo conceptual, seguido de un modelo lógico, donde se deben aplicar unas reglas de normalización y así, en última instancia obtener un modelo físico y proceder a su respectiva implementación.
+            |El diseño de la base de datos es un proceso que se rige bajo ciertos principios bien estructurados, partiendo de una base para la obtención del modelo conceptual, seguido de un modelo lógico, donde se deben aplicar unas reglas de normalización y así, en última instancia, obtener un modelo físico y proceder a su respectiva implementación.
       .col-lg-3.col-8(data-aos="fade-left"): img(src='@/assets/curso/temas/tema2/1.svg', alt='')
     .row.justify-content-center.mb-5
       .col-lg-10
@@ -270,7 +270,6 @@
               |#[b Ejemplo:] si se tiene una tabla “usuario” la llave primaria que identificaría a cada registro de forma única sería el campo código de usuario.
           .col-md-8
             .tarjeta.bg-white.p-5
-              h4 Llave primaria
               img(src='@/assets/curso/temas/tema2/11.svg', alt='')
         .row
           .col-md-4.mb-4.mb-md-0
@@ -284,12 +283,11 @@
 
           .col-md-8
             .tarjeta.bg-white.p-5
-              h4 Llaves foráneas
               img(src='@/assets/curso/temas/tema2/12.svg', alt='')
     Separador
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 2.3 Etapas del diseño, modelo entidad relación
-    p(data-aos="fade-right") Para empezar a entender el modelo entidad–relación, se deben revisar primero los conceptos básicos, qué es un modelo, cuáles modelos existen y demás temas pertinentes.
+      h2 2.3 Etapas del diseño, modelo entidad / relación
+    p(data-aos="fade-right") Para empezar a entender el modelo entidad / relación, se deben revisar primero los conceptos básicos, qué es un modelo, cuáles modelos existen y demás temas pertinentes.
     ul.lista-ul--color
       li
         i.fas.fa-square
@@ -339,9 +337,9 @@
           tr
             th(colspan='3' style='border-bottom: 1px solid #c1c1c1') Ventas
           tr
-            th Código #[br] Vendedor
-            th Cédula #[br] Cliente
-            th Valor de #[br] Venta
+            th Código #[br] vendedor
+            th Cédula #[br] cliente
+            th Valor de #[br] venta
         tbody
           tr
             td 125 
@@ -361,9 +359,9 @@
           tr
             th(colspan='3' style='border-bottom: 1px solid #c1c1c1') Cliente
           tr
-            th Cédula #[br] Cliente
-            th Nombre #[br] Cliente
-            th Código #[br] Almacén
+            th Cédula #[br]  cliente
+            th Nombre #[br] cliente
+            th Código #[br] almacén
         tbody
           tr
             td 12586956
@@ -395,8 +393,8 @@
           tr
             th(colspan='2' style='border-bottom: 1px solid #c1c1c1') Almacén
           tr
-            th Cédula #[br] Cliente
-            th Ubicación #[br] Almacén
+            th Cédula #[br] cliente
+            th Ubicación #[br] almacén
         tbody
           tr
             td 6
@@ -409,10 +407,10 @@
             td Cali
           tr
             td 2
-            td Medellin 
+            td Medellín 
           tr
             td 2
-            td Medellin
+            td Medellín
           tr
             td 1
             td Bucaramanga
@@ -422,8 +420,8 @@
           tr
             th(colspan='2' style='border-bottom: 1px solid #c1c1c1') Vendedor
           tr
-            th Código #[br] Vendedor
-            th Nombre #[br] Vendedor
+            th Código #[br] vendedor
+            th Nombre #[br] vendedor
         tbody
           tr
             td 125
@@ -444,10 +442,10 @@
             br
             br
             |Un error común en el diseño de un modelo entidad – relación, o en general en un modelo de base de datos, es intentar relacionar todas las entidades entre sí, para evitar ese error, se debe pensar en las relaciones evidentes entre las entidades y si sale más de un camino, evaluar cuáles son redundantes y desecharlo para dejar uno solo, es decir, el correcto.
-          p.text-small(numero="3" titulo="Identificar los atributos") Los atributos describen a cada entidad, son las características de cada una de ellas, que tengan relevancia con el negocio, porque no todos los atributos de una entidad deben ser almacenados. Por ejemplo, si se encuentra en la entidad "Cliente”, se pueden ver atributos como: color de ojos, edad, fecha de nacimiento, color de piel, estatura, etc.
+          p.text-small(numero="3" titulo="Identificar los atributos") Los atributos, describen a cada entidad, son las características de cada una de ellas, que tengan relevancia con el negocio, porque no todos los atributos de una entidad deben ser almacenados. Por ejemplo, si se encuentra en la entidad "Cliente”, se pueden ver atributos como: color de ojos, edad, fecha de nacimiento, color de piel, estatura, etc.
             br
             br
-            |Todos esos atributos forman parte de la entidad "Cliente”, pero no son relevantes para el negocio y, por ende, no se deben diseñar, ni plasmar en ninguna parte del modelo de datos. Es importante tener definido a qué tipo de dato pertenece el atributo y si su valor es obligatorio u opcional. Para cada una de estas características de los atributos, existe una manera grafica de representarlo, de acuerdo con la notación utilizada en el modelo.
+            |Todos esos atributos forman parte de la entidad "Cliente”, pero no son relevantes para el negocio y, por ende, no se deben diseñar, ni plasmar en ninguna parte del modelo de datos. Es importante tener definido a qué tipo de dato pertenece el atributo y si su valor es obligatorio u opcional. Para cada una de estas características de los atributos, existe una manera gráfica de representarlo, de acuerdo con la notación utilizada en el modelo.
           p.text-small(numero="4" titulo="Depurar el modelo") Al tener definido un modelo inicial, se deben revisar las características y operaciones de una entidad, desde la perspectiva de sus datos.
     p.mb-5(data-aos='fade-right') Por tanto, se debe evaluar: 
     .row.justify-content-center.align-items-center.mb-5
@@ -472,8 +470,8 @@
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 2
           br
-          span.fst-italic Ejemplo de modelo Entidad - Relación        
-    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema2/26.svg', alt='')            
+          span.fst-italic Ejemplo de modelo Entidad / Relación        
+    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema3/26.svg', alt='')            
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.4 Normalización 
@@ -545,13 +543,13 @@
           table
             thead
               tr
-                th Código #[br] Vendedor
-                th Nombre #[br] Vendedor
-                th Cédula #[br] Cliente
-                th Nombre #[br] Cliente
-                th Código #[br] Almacén
-                th Ubicación #[br] Almacén
-                th Valor de #[br] Venta
+                th Código #[br] vendedor
+                th Nombre #[br] vendedor
+                th Cédula #[br] cliente
+                th Nombre #[br] cliente
+                th Código #[br] almacén
+                th Ubicación #[br] almacén
+                th Valor de #[br] venta
             tbody
               tr
                 td 125
