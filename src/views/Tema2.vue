@@ -373,11 +373,11 @@
             td 3
           tr
             td 1054875963
-            td Carlos Baron
+            td Carlos Barón
             td 3
           tr
             td 37485789
-            td Silvia Garcia
+            td Silvia García
             td 2
           tr
             td 13457859
@@ -385,7 +385,7 @@
             td 2
           tr
             td 1001254789
-            td Pedro Gil
+            td Pedro Gíl
             td 1
     .tabla-a.color-acento-contenido.mb-5.text-center
       table
