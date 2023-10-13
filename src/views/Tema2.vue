@@ -27,14 +27,14 @@
                   p.text-small Actualmente, se cuenta con varios modelos de bases de datos; para entender mejor este tema, le invitamos a descargar el siguiente documento.
                 .col.mb-3.mb-sm-0
                   a.boton.color-acento-botones(:href="obtenerLink('downloads/doc1.pdf')" target="_blank" type="application/pdf")
-                    span(style='color: #12263f') Descargar 
+                    span(style='color: #12263f') Descargar
                     i.fas.fa-file-download(style='color: #12263f')
     Separador
     #t_2_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.1 Conceptos del modelo relacional - tipos de relaciones
     p.mb-5(data-aos='fade-right') A continuación, se presentan los siguientes conceptos:
     .row.justify-content-center.mb-5
-      .col-lg-4.mb-lg-0.mb-3
+      .col-lg-6.col-xl-4.mb-4
         .tarjeta-up
           .tarjeta-up__imagen
             img(src='@/assets/curso/temas/tema2/3.svg')
@@ -43,7 +43,7 @@
               h3.text-center.mb-0 Modelo de datos
             .tarjeta-up__contenido__texto(style="background-color: #FFE1A2").p-3.pt-0.h-100
               p Los modelos de datos son el instrumento principal para ofrecer dicha abstracción, a través de su jerarquía de niveles. Un modelo de datos es un conjunto de conceptos que sirven para describir la estructura de una base de datos, es decir, los datos, las relaciones entre los datos y las restricciones que deben cumplirse sobre los datos.
-      .col-lg-4.mb-lg-0.mb-3
+      .col-lg-6.col-xl-4.mb-4
         .tarjeta-up
           .tarjeta-up__imagen
             img(src='@/assets/curso/temas/tema2/4.svg')
@@ -52,7 +52,7 @@
               h3.text-center.mb-0 Estructura de datos relacional
             .tarjeta-up__contenido__texto(style="background-color: #FFE1A2").p-3.pt-0.h-100
               p La estructura de datos del modelo relacional es como su nombre lo expresa, las relaciones que gráficamente se representan mediante una tabla. Teniendo como base la representación gráfica está compuesta por sus propiedades, tipos de relaciones, y sus respectivas claves.
-      .col-lg-4.mb-lg-0.mb-3
+      .col-lg-6.col-xl-4.mb-4
         .tarjeta-up
           .tarjeta-up__imagen
             img(src='@/assets/curso/temas/tema2/5.svg')
@@ -122,21 +122,21 @@
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | Nombre de la relación.
+                span Nombre de la relación.
 
               li
                 i.fas.fa-check
-                | Cabecera, conjunto de n-pares atributo-dominio.
+                span Cabecera, conjunto de n-pares atributo-dominio.
 
               li
                 i.fas.fa-check
-                | Cuerpo, conjunto de n-tuplas.
+                span Cuerpo, conjunto de n-tuplas.
               li
                 i.fas.fa-check
-                | Esquema, representado por el nombre de la relación y la cabecera.
+                span Esquema, representado por el nombre de la relación y la cabecera.
               li
                 i.fas.fa-check
-                | Estado, constituido por el cuerpo y el esquema.
+                span Estado, constituido por el cuerpo y el esquema.
           .tarjeta.p-4(titulo="Dominio" style="background-color: #fff4da")
             h4 Es el conjunto de posibles valores que toma un atributo. Existe sin depender de ningún otro elemento.
             p Un dominio se identifica por un nombre, tiene un número finito de valores, todos los valores son del mismo tipo y los valores son atómicos respecto al modelo relacional.
@@ -146,42 +146,52 @@
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | Por extensión, expresando todos sus valores. Ejemplo: vocales = {a, e, i, o, u}.
+                span Por extensión, expresando todos sus valores. Ejemplo: vocales = {a, e, i, o, u}.
               li
                 i.fas.fa-check
-                | Intención, mediante un tipo de dato. Ejemplo: altura = decimal.
+                span Intención, mediante un tipo de dato. Ejemplo: altura = decimal.
           .tarjeta.p-4(titulo="Atributo" style="background-color: #fff4da")
             h4 Son las propiedades de una relación, está representado por una columna en la tabla. Representado así:
             p Sintaxis: B = Dom (C) => B es el dominio de C
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | Un atributo está siempre asociado a una relación, mientras que el dominio tiene existencia propia.
+                span Un atributo está siempre asociado a una relación, mientras que el dominio tiene existencia propia.
               li
                 i.fas.fa-check
-                | Un atributo representa la propiedad de una relación.
+                span Un atributo representa la propiedad de una relación.
 
               li
                 i.fas.fa-check
-                | El atributo toma los valores de un dominio.
+                span El atributo toma los valores de un dominio.
           .tarjeta.p-4(titulo="Tupla" style="background-color: #fff4da")
             h4 Es la ocurrencia de una relación, está representada por medio de una fila.
       .col-lg-4(data-aos="fade-left")
         img(src='@/assets/curso/temas/tema2/8.svg', alt='')
-    ul.lista-ul--color
+
+    ul.lista-ul--color.mb-4
       li
         i.fas.fa-square
         h3.mb-0  Elementos que conforman una tabla
-    .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
+
+    .titulo-square.d-flex.align-items-center.mb-2(data-aos="fade-right")
       i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
-      h5.mb-0 Tablas
+      h4.mb-0 Tablas
+
     p.mb-5(data-aos='fade-right') Los datos de una base se guardan en una o varias tablas, según como están relacionados. Las tablas están compuestas por filas y columnas, en las columnas se definen los datos que se requieren almacenar especificando el tipo de dato y, en la fila quedarán los llamados registros (datos).
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 2
+          br
+          span.fst-italic Elementos que componen una tabla
+
         img(src='@/assets/curso/temas/tema2/9.svg', alt='')
+
+
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-check(style="color: #FFB30B   ").me-3.mb-0
-      h5.mb-0 Tipos de datos
+      h4.mb-0 Tipos de datos
     p.mb-5(data-aos='fade-right') Las bases de datos están compuestas por tablas y estas, a su vez, contienen filas y columnas. Al momento de la creación de la columna hay que especificar, qué tipo de dato va a contener, para cuando se realice la agregación de los datos.
       br
       br
@@ -248,7 +258,7 @@
                 td INTEGER2, SMALLINT
               tr
                 td LONG
-                td INT, INTEGER, 
+                td INT, INTEGER,
               tr
                 td LONGTEXT
                 td LONGCHAR, MEMO, NOTE
@@ -264,26 +274,41 @@
         .row
           .col-md-4.mb-4.mb-md-0
             h4 Llave primaria
-            p Una llave o clave primaria es un campo o grupo de campos que identifican de forma única un registro. Dentro de la tabla cada registro tiene su propia llave primaria, que es única e irrepetible (González, 2022). Esta llave se implementa para identificar al registro dentro de la tabla, para poder tener acceso al registro organizarlo y manipularlo. 
+            p Una llave o clave primaria es un campo o grupo de campos que identifican de forma única un registro. Dentro de la tabla cada registro tiene su propia llave primaria, que es única e irrepetible (González, 2022). Esta llave se implementa para identificar al registro dentro de la tabla, para poder tener acceso al registro organizarlo y manipularlo.
               br
               br
               |#[b Ejemplo:] si se tiene una tabla “usuario” la llave primaria que identificaría a cada registro de forma única sería el campo código de usuario.
           .col-md-8
             .tarjeta.bg-white.p-5
+              .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+                h5 Figura 3
+                br
+                span.fst-italic Ejemplo de una tabla “usuario”
+
               img(src='@/assets/curso/temas/tema2/11.svg', alt='')
         .row
-          .col-md-4.mb-4.mb-md-0
+          .col
             h4 Llaves foráneas
             p Una clave foránea es una columna o un conjunto de columnas en una tabla, cuyos valores corresponden a los valores de la clave primaria de otra tabla. Para poder añadir una fila con un valor de clave foránea específico, debe existir una fila en la tabla relacionada con el mismo valor de clave primaria.
-              br
-              |Se implementa para relacionar dos tablas, los atributos referenciados por medio de esta clave, solo pueden contener valores de la clave principal de la tabla con que esté relacionada.
-              br
-              br
-              | #[b Ejemplo:] se dispone de dos tablas que están relacionadas, una llamada “Alquileres” y otra tabla “Clientes”, se puede observar que la relación es por medio de llave foránea, en este caso la llave foránea se encuentra localizada en la tabla “Alquiler” por medio del campo “cod_cliente”, donde a su vez, debe ser clave primaria en la otra tabla con la que está relacionada.
 
-          .col-md-8
-            .tarjeta.bg-white.p-5
-              img(src='@/assets/curso/temas/tema2/12.svg', alt='')
+            p Se implementa para relacionar dos tablas, los atributos referenciados por medio de esta clave, solo pueden contener valores de la clave principal de la tabla con que esté relacionada.
+
+            p.mb-4 #[b Ejemplo:] se dispone de dos tablas que están relacionadas, una llamada “Alquileres” y otra tabla “Clientes”, se puede observar que la relación es por medio de llave foránea, en este caso la llave foránea se encuentra localizada en la tabla “Alquiler” por medio del campo “cod_cliente”, donde a su vez, debe ser clave primaria en la otra tabla con la que está relacionada.
+
+            .row.justify-content-center
+              .col-lg-8
+                .tarjeta.bg-white.p-5
+                  .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+                    h5 Figura 4
+                    br
+                    span.fst-italic Ejemplo de dos tablas que están relacionadas
+
+                  img(src='@/assets/curso/temas/tema2/12.svg', alt='')
+
+
+
+
+
     Separador
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.3 Etapas del diseño, modelo entidad / relación
@@ -298,7 +323,7 @@
           p.mb-0 Se refiere a una colección de herramientas utilizadas para la descripción de los datos, las formas como se relacionan y la semántica asociada a ellos, además de sus restricciones de consistencia.
         p Un modelo de datos puede representar la organización conceptual o lógica de los datos que van a soportar todas las operaciones que se ejecutan en un determinado sistema o negocio. Dicho modelo es el encargado de dar una representación gráfica del mundo real al que se asocia, mostrando así, los elementos que lo componen. Para responder al avance rápido de la tecnología, los modelos de datos también han evolucionado y se han clasificado en tres grupos:
       .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c1.png', alt='')
-        
+
     //- .row.justify-content-center.mb-5
     //-   .col-lg-7(data-aos="fade-right")
     //-     .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #fff4da ")
@@ -313,22 +338,22 @@
           li
           .lista-ol--cuadro__vineta(style='background-color: #084a93')
             span 1
-          | Modelos lógicos basados en objetos
+          span Modelos lógicos basados en objetos
           li
           .lista-ol--cuadro__vineta(style='background-color: #084a93')
             span 2
-          | Modelos lógicos basados en registros
+          span Modelos lógicos basados en registros
           li
           .lista-ol--cuadro__vineta(style='background-color: #084a93')
             span 3
-          | Modelos físicos de datos
+          span Modelos físicos de datos
     div(style="background-color: #fff4da; border-left: 20px solid #ffb30b" data-aos="zoom-in").p-5.mb-5
       p El #[b MER] (como se denominará en adelante al modelo entidad – relación), fue un modelo introducido originalmente por Peter Chen un estudioso de las ciencias de la computación en el año 1976 a través de su artículo modelo ER, el cual ha sido nombrado en todas las investigaciones y avances de análisis y diseño de sistemas.
         br
         br
         | La base del MER está en identificar los elementos o entes importantes del sistema, los datos que componen cada una de estas entidades y cómo sería la relación o interacción entre entidades.
     .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-      h5 Tabla 2 
+      h5 Tabla 2
       br
       span.fst-italic Modelo de datos
     .tabla-a.color-acento-contenido.mb-5.text-center
@@ -342,7 +367,7 @@
             th Valor de #[br] venta
         tbody
           tr
-            td 125 
+            td 125
             td 12586956
             td 250000
           tr
@@ -407,7 +432,7 @@
             td Cali
           tr
             td 2
-            td Medellín 
+            td Medellín
           tr
             td 2
             td Medellín
@@ -447,7 +472,7 @@
             br
             |Todos esos atributos forman parte de la entidad "Cliente”, pero no son relevantes para el negocio y, por ende, no se deben diseñar, ni plasmar en ninguna parte del modelo de datos. Es importante tener definido a qué tipo de dato pertenece el atributo y si su valor es obligatorio u opcional. Para cada una de estas características de los atributos, existe una manera gráfica de representarlo, de acuerdo con la notación utilizada en el modelo.
           p.text-small(numero="4" titulo="Depurar el modelo") Al tener definido un modelo inicial, se deben revisar las características y operaciones de una entidad, desde la perspectiva de sus datos.
-    p.mb-5(data-aos='fade-right') Por tanto, se debe evaluar: 
+    p.mb-5(data-aos='fade-right') Por tanto, se debe evaluar:
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-7
         ul.lista-ul--color
@@ -464,17 +489,17 @@
                 i.fas.fa-check
                 p.mb-0 #[b Exclusividad de ocurrencias y de atributos:] las entidades deben tener exclusividad en sus ocurrencias, es decir, no pueden estar contenidas en otra entidad.
 
-      .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c2.png', alt='') 
+      .col-lg-5.col-8: img(src='@/assets/curso/temas/tema2/c2.png', alt='')
     .row.justify-content-center
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 2
+          h5 Figura 5
           br
-          span.fst-italic Ejemplo de modelo Entidad / Relación        
-    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema3/26.svg', alt='')            
+          span.fst-italic Ejemplo de modelo Entidad / Relación
+    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema3/26.svg', alt='')
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 2.4 Normalización 
+      h2 2.4 Normalización
     p.mb-5(data-aos='fade-right') Cuando se comienza el proceso de diseño de una base de datos, no es suficiente con conocer y tener experticia en el diccionario de datos; el reto está en poder diseñar una base de datos con una estructura estable y lógica tal que:
 
     //- .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
@@ -517,11 +542,11 @@
         h5 Una mirada rápida a la normalización es a través de los siguientes pasos:
         p #[b 1.] Descomponer todos los grupos de datos en registros bidimensionales.
           br
-          |#[b 2.] Eliminar todas las relaciones en la que los datos no dependan completamente de la llave primaria del registro. 
+          |#[b 2.] Eliminar todas las relaciones en la que los datos no dependan completamente de la llave primaria del registro.
           br
           |#[b 3.] Eliminar todas las relaciones que contengan dependencias transitivas.
     .row.justify-content-center.mb-5
-      .col-lg-10 
+      .col-lg-10
         .bloque-derecha
           .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
             .bloque-texto-g__img(
@@ -578,7 +603,7 @@
                   br
                   |1250986
                   br
-                  |970000 
+                  |970000
               tr
                 td 229
                 td Laura Parra
@@ -608,7 +633,7 @@
                   br
                   |1350000
     .cajon-b.color-acento-contenido.p-3.mb-5.abajo-derecha
-      p.mb-0 De acuerdo a la anterior imagen, si se aplican unos conceptos básicos de diccionario de datos y se listan dichos datos se encontrarán grupos repetitivos, lo que indica que esa lista o ese reporte como insumo o diccionario de datos no está normalizado.
+      p.mb-0 De acuerdo a la anterior tabla, si se aplican unos conceptos básicos de diccionario de datos y se listan dichos datos se encontrarán grupos repetitivos, lo que indica que esa lista o ese reporte como insumo o diccionario de datos no está normalizado.
         br
         br
         |Un mismo dato almacenado en distintas filas, implica ineficiencia en el uso de los medios de almacenamiento “¿Por qué es un inconveniente almacenar múltiples veces el mismo dato?”, acarrea serios inconvenientes en el procesamiento de altas, bajas y modificaciones; por ende, de aquí parte el proceso de normalización.
@@ -625,9 +650,9 @@
                   p.text-small Como se ha indicado, las formas normales son aplicadas a las tablas de una base de datos. Decir que una base de datos está en la forma normal N es decir que todas sus tablas están en la forma normal N; se ha dejado a disposición, un documento que permite conocer las cinco formas normales, el cual puede descargar a continuación:
                 .col.mb-3.mb-sm-0
                   a.boton.color-acento-botones(:href="obtenerLink('downloads/doc2.pdf')" target="_blank" type="application/pdf")
-                    span(style='color: #12263f') Descargar 
-                    i.fas.fa-file-download(style='color: #12263f')    
-    Separador  
+                    span(style='color: #12263f') Descargar
+                    i.fas.fa-file-download(style='color: #12263f')
+    Separador
     #t_2_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.5. Cardinalidad
     p.mb-5(data-aos='fade-right') La cardinalidad es la cantidad de entidades con las cuales, otra determinada entidad se puede asociar mediante una relación, la cardinalidad puede ser:

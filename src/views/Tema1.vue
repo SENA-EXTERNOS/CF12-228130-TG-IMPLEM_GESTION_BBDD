@@ -33,7 +33,7 @@
               p.mb-0 Como primera medida debe definirse el término “base de datos”, este es un conjunto de datos clasificados metódicamente y correlacionados entre ellos, con el propósito de lograr una eficiencia y valor de esos datos. #[b “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos”.] (Marqués, 2010)
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
-      h3.mb-0 Origen bases de datos
+      h3.mb-0 Origen de las bases de datos
     p.mb-5(data-aos='fade-right') A continuación, se explica cronológicamente el origen de las bases de datos:
     .tarjeta(style="background-color: #edf7fe").p-4.mb-5
       LineaTiempoC.color-primario(text-small)
@@ -42,7 +42,7 @@
             p Los orígenes de las bases de datos provienen de la antigüedad, normalmente se manejaban en especies de bibliotecas y registros, que eran utilizados, en gran parte, para recolectar información de las cosechas y censos. Sin embargo, el método empleado era tedioso e ineficaz y el proceso era muy lento, ya que el trabajo se realizaba de forma manual porque no existían máquinas para ello.
               br
               br
-              |Luego se utilizaron sistemas de ficheros para acceder a la información. Estos sistemas fueron en su momento una novedad, reemplazando los archivadores manuales y proporcionando una forma más eficaz de acceder a los datos almacenados.   
+              |Luego se utilizaron sistemas de ficheros para acceder a la información. Estos sistemas fueron en su momento una novedad, reemplazando los archivadores manuales y proporcionando una forma más eficaz de acceder a los datos almacenados.
               br
               br
               |La implementación de bases de datos surgió gracias al requisito de almacenar grandes volúmenes de información, es así como, este concepto ha permanecido ligado a la informática.
@@ -60,7 +60,7 @@
               img(src='@/assets/curso/temas/tema1/3.jpg', alt='' style='border-radius: 20px')
         .row.justify-content-center(titulo="Década de 1960")
           .col-md-6.mb-4.mb-md-0
-            p Para esta época las máquinas ya funcionaban por medio de discos, lo cual se hizo popular porque se podía realizar consultas directamente en la información, esta forma era más sencilla y no se necesitaba conocer la ubicación de los datos para hacer la búsqueda.   
+            p Para esta época las máquinas ya funcionaban por medio de discos, lo cual se hizo popular porque se podía realizar consultas directamente en la información, esta forma era más sencilla y no se necesitaba conocer la ubicación de los datos para hacer la búsqueda.
               br
               br
               |Posteriormente, en esta época aparecieron las primeras generaciones de bases de datos jerárquicas y las bases de datos de red, aportando un gran beneficio en los métodos de guardar estructuras de datos.
@@ -70,13 +70,13 @@
               img(src='@/assets/curso/temas/tema1/4.jpg', alt='' style='border-radius: 20px')
         .row.justify-content-center(titulo="Década de 1970")
           .col-md-6.mb-4.mb-md-0
-            p El científico informático inglés Edgar Frank Codd, popular por sus grandes contribuciones a la teoría de bases de datos relacionales, determinó y difundió para los sistemas de datos una serie de normas plasmadas en su artículo, bajo el modelo relacional. Este gran aporte del científico Codd, generó el nacimiento de la segunda generación de los sistemas gestores de bases de datos. 
+            p El científico informático inglés Edgar Frank Codd, popular por sus grandes contribuciones a la teoría de bases de datos relacionales, determinó y difundió para los sistemas de datos una serie de normas plasmadas en su artículo, bajo el modelo relacional. Este gran aporte del científico Codd, generó el nacimiento de la segunda generación de los sistemas gestores de bases de datos.
               br
               br
               |En consecuencia, Larry Ellison, partiendo de los avances de Edgar F. Codd sobre los sistemas de bases de datos relacionales, fomentó el #[em Relational Software System], donde actualmente se distingue como Oracle Corporation, fabricando un sistema de gestor de bases de datos relacional manteniendo como identificador el nombre de la organización Oracle.
               br
               br
-              |Hoy en día el gestor de base de datos de Oracle es considerado el mejor, gracias a todas las funcionalidades, cobertura, seguridad y soporte; ya que brinda un buen servicio por medio de paquetes que se ajustan a las necesidades de las organizaciones. 
+              |Hoy en día el gestor de base de datos de Oracle es considerado el mejor, gracias a todas las funcionalidades, cobertura, seguridad y soporte; ya que brinda un buen servicio por medio de paquetes que se ajustan a las necesidades de las organizaciones.
           .col-md-4
             figure
               img(src='@/assets/curso/temas/tema1/5.jpg', alt='' style='border-radius: 20px')
@@ -122,7 +122,7 @@
     ul.lista-ul--color
       li
         i.fas.fa-square
-        h3.mb-0 Características de un sistema de BD  
+        h3.mb-0 Características de un sistema de BD
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-1.col-8(data-aos="fade-right"): img(src='@/assets/curso/temas/tema1/9.svg', alt='')
       .col-lg-11(data-aos="fade-left")
@@ -147,7 +147,7 @@
         img(src='@/assets/curso/temas/tema1/12.svg' alt='AvatarTop' style='width: 135px')
         .tarjeta.w-100(style="background-color:#c3e2fd ").p-4
           .text-center.mt-4
-            p Dispone de un lenguaje de programación que permite la manipulación de los datos, mediante la implementación de diferentes operaciones. 
+            p Dispone de un lenguaje de programación que permite la manipulación de los datos, mediante la implementación de diferentes operaciones.
       .tarjeta-avatar
         img(src='@/assets/curso/temas/tema1/13.svg' alt='AvatarTop' style='width: 135px')
         .tarjeta.w-100(style="background-color:#c3e2fd ").p-4
@@ -167,7 +167,7 @@
         img(src='@/assets/curso/temas/tema1/16.svg' alt='AvatarTop' style='width: 135px')
         .tarjeta.w-100(style="background-color:#c3e2fd ").p-4
           .text-center.mt-4
-            p Permite gestionar diferentes tipos de bases de datos, ya sean bases de datos orientadas a objetos o bases de datos relacionales. 
+            p Permite gestionar diferentes tipos de bases de datos, ya sean bases de datos orientadas a objetos o bases de datos relacionales.
       .tarjeta-avatar
         img(src='@/assets/curso/temas/tema1/17.svg' alt='AvatarTop' style='width: 135px')
         .tarjeta.w-100(style="background-color:#c3e2fd ").p-4
@@ -239,7 +239,7 @@
               p.mb-0 Las bases de datos no relacionales son ideales para construir aplicaciones modernas, gracias a que está conformada por esquemas flexibles y diseñadas específicamente para modelos de datos especiales. Son reconocidas en el desarrollo de #[i software], al ser de fácil construcción y manejo, permiten una gran escalabilidad y funcionalidad en el rendimiento. Estas bases de datos utilizan una gran variedad de modelos de datos conformados por: documentos, clave – valor, grafos, en-memoria y búsqueda.
                 br
                 br
-                |Las bases de datos no relacionales son también llamadas bases de datos NoSQL, no disponen de un identificador que sirve para relacionar entre un conjunto de datos y otro. La información se organiza generalmente mediante documentos, es una base de datos muy práctica cuando no se tiene claridad en el esquema de datos que se va a implementar.     
+                |Las bases de datos no relacionales son también llamadas bases de datos NoSQL, no disponen de un identificador que sirve para relacionar entre un conjunto de datos y otro. La información se organiza generalmente mediante documentos, es una base de datos muy práctica cuando no se tiene claridad en el esquema de datos que se va a implementar.
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="fade-right")
         div(style="background-color: #00defc").p-3
@@ -310,7 +310,7 @@
             figure
               img(src='@/assets/curso/temas/tema1/ventajas.svg', alt='')
 
-        h2.text-center Ventajas 
+        h2.text-center Ventajas
         p La forma de almacenamiento de la información presenta ciertas ventajas a comparación de las bases de datos relacionales:
         ul.lista-ul--color
           li
