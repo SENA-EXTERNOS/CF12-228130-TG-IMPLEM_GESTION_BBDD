@@ -496,7 +496,7 @@
           h5 Figura 5
           br
           span.fst-italic Ejemplo de modelo Entidad / Relación
-    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema3/26.svg', alt='')
+    img.img-a.img-t.mb-5(src='@/assets/curso/temas/tema3/26b.svg', alt='')
     Separador
     #t_2_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.4 Normalización
