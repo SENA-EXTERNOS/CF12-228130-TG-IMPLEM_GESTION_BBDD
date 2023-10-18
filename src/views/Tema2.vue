@@ -34,29 +34,29 @@
       h2 2.1 Conceptos del modelo relacional - tipos de relaciones
     p.mb-5(data-aos='fade-right') A continuación, se presentan los siguientes conceptos:
     .row.justify-content-center.mb-5
-      .col-lg-6.col-xl-4.mb-4
+      .col-lg-6.col-xl-5.mb-4
         .tarjeta-up
           .tarjeta-up__imagen
             img(src='@/assets/curso/temas/tema2/3.svg')
-          .tarjeta-up__contenido
+          .tarjeta-up__contenido.pt-4
             .tarjeta-up__contenido__titulo(style="background-color: #FFE1A2").p-3
               h3.text-center.mb-0 Modelo de datos
             .tarjeta-up__contenido__texto(style="background-color: #FFE1A2").p-3.pt-0.h-100
               p Los modelos de datos son el instrumento principal para ofrecer dicha abstracción, a través de su jerarquía de niveles. Un modelo de datos es un conjunto de conceptos que sirven para describir la estructura de una base de datos, es decir, los datos, las relaciones entre los datos y las restricciones que deben cumplirse sobre los datos.
-      .col-lg-6.col-xl-4.mb-4
+      .col-lg-6.col-xl-5.mb-4
         .tarjeta-up
           .tarjeta-up__imagen
             img(src='@/assets/curso/temas/tema2/4.svg')
-          .tarjeta-up__contenido
+          .tarjeta-up__contenido.pt-4
             .tarjeta-up__contenido__titulo(style="background-color: #FFE1A2").p-3
               h3.text-center.mb-0 Estructura de datos relacional
             .tarjeta-up__contenido__texto(style="background-color: #FFE1A2").p-3.pt-0.h-100
               p La estructura de datos del modelo relacional es como su nombre lo expresa, las relaciones que gráficamente se representan mediante una tabla. Teniendo como base la representación gráfica está compuesta por sus propiedades, tipos de relaciones, y sus respectivas claves.
-      .col-lg-6.col-xl-4.mb-4
+      .col-lg-6.col-xl-5.mb-4
         .tarjeta-up
           .tarjeta-up__imagen
             img(src='@/assets/curso/temas/tema2/5.svg')
-          .tarjeta-up__contenido
+          .tarjeta-up__contenido.pt-4
             .tarjeta-up__contenido__titulo(style="background-color: #FFE1A2").p-3
               h3.text-center.mb-0 Relaciones
             .tarjeta-up__contenido__texto(style="background-color: #FFE1A2").p-3.pt-0.h-100
@@ -287,7 +287,7 @@
 
               img(src='@/assets/curso/temas/tema2/11.svg', alt='')
         .row
-          .col
+          .col.col-md-4.mb-4.mb-md-0
             h4 Llaves foráneas
             p Una clave foránea es una columna o un conjunto de columnas en una tabla, cuyos valores corresponden a los valores de la clave primaria de otra tabla. Para poder añadir una fila con un valor de clave foránea específico, debe existir una fila en la tabla relacionada con el mismo valor de clave primaria.
 
@@ -295,15 +295,15 @@
 
             p.mb-4 #[b Ejemplo:] se dispone de dos tablas que están relacionadas, una llamada “Alquileres” y otra tabla “Clientes”, se puede observar que la relación es por medio de llave foránea, en este caso la llave foránea se encuentra localizada en la tabla “Alquiler” por medio del campo “cod_cliente”, donde a su vez, debe ser clave primaria en la otra tabla con la que está relacionada.
 
-            .row.justify-content-center
-              .col-lg-8
-                .tarjeta.bg-white.p-5
-                  .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-                    h5 Figura 4
-                    br
-                    span.fst-italic Ejemplo de dos tablas que están relacionadas
 
-                  img(src='@/assets/curso/temas/tema2/12.svg', alt='')
+          .col-lg-8
+            .tarjeta.bg-white.p-5
+              .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+                h5 Figura 4
+                br
+                span.fst-italic Ejemplo de dos tablas que están relacionadas
+
+              img(src='@/assets/curso/temas/tema2/12.svg', alt='')
 
 
 
