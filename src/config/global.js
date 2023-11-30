@@ -134,14 +134,6 @@ export default {
         'https://books.google.es/books?hl=es&lr=&id=H0VBDwAAQBAJ&oi=fnd&pg=PA7&dq=fundamentos+de+bases+de+datos&ots=fXjXWGxFXx&sig=1YP_o0q0n07aHlO7fRugedSIatY#v=onepage&q=fundamentos%20de%20bases%20de%20datos&f=false         ',
     },
     {
-      tema: 'Introducción a sistemas de bases de datos',
-      referencia:
-        'Moscoso Alanya, H. M. (2019). BASE DE DATOS RELACIONALES: MS-ACCESS Introducción a las bases de datos (BD), consideraciones generales de las BD, MS-ACCESS',
-      tipo: 'Trabajo de grado, especialización',
-      link:
-        'https://repositorio.une.edu.pe/bitstream/handle/20.500.14039/6280/MONOGRAF%c3%8dA%20-%20MOSCOSO%20ALANYA%20HERMINA%20MONICA%20-%20FAC.pdf?sequence=6&isAllowed=y',
-    },
-    {
       tema: 'Diseño de bases de datos',
       referencia: 'Mendoza, A., & López, R. (2018). Bases de datos.',
       tipo: 'Artículo',
@@ -245,7 +237,7 @@ export default {
       referencia:
         'Millán, M. (2017). <i>Fundamentos de bases de datos</i>. Universidad del Valle. Programa Editorial.',
       link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_elibroELB129060',
+        'https://bibliotecadigital.univalle.edu.co/server/api/core/bitstreams/cf2aee3d-4b5c-4c3d-a76c-f7f25a6be061/content',
     },
     {
       referencia:
